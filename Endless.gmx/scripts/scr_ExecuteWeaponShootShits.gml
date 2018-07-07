@@ -1,0 +1,20 @@
+//this is for firing value stuff
+global.ShootShitM4 = 1; //this is for the way the gun is move you need this for a global value to have auto system
+global.ShootShitPumpShotgun = 1; //you need this for alarms and so you can use gun
+global.ShootShitMP9= 1;
+global.ShootShitDesertEagle = 1;
+global.ShootShitSniper = 1;
+global.ShootShitM60 = 1;
+global.ShootShitG11 = 1;
+global.ShootShitScorcher = 1;
+global.ShootShitAK12 = 1;
+global.ShootShitMinigun = 1;
+global.ShootShitAT4 = 1;
+global.ShootShitFNFAL = 1;
+global.ShootShitXL79 = 1;
+global.ShootShitMG42 = 1;
+global.ShootShitBMG = 1;
+global.ShootShitShoty360 = 1;
+global.ShootShitHOD = 1;
+global.ShootShitDROPOGM = 1;
+global.ShootShitNitro = 1;
