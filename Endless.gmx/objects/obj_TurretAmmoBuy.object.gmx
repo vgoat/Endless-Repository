@@ -36,6 +36,7 @@
         global.Money -= 4250
         global.TurretAmmoBought = 1
         global.TurretAmmo = 500 //for gui shit
+        global.TurretCost += 1000
     }
     else
     {
@@ -73,6 +74,7 @@
         global.Money -= 4250
         global.TurretAmmoBought = 1
         global.TurretAmmo = 500 //for gui shit
+        global.TurretCost += 1000
     }
     else
     {

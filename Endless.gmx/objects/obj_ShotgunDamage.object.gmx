@@ -35,6 +35,7 @@
         }   
         global.Money -= 3750
         global.ShotgunMineDamage = 1
+        global.ShotgunMineCost += 50
         
     }
     else
@@ -72,6 +73,7 @@
         }   
         global.Money -= 3750
         global.ShotgunMineDamage = 1
+        global.ShotgunMineCost += 50
         
     }
     else

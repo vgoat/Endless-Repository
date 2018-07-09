@@ -96,7 +96,7 @@ alarm[0] = 1800// for random quotes
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.DialogueActive = 0 //disable dialogue
+            <string>global.DialogueActive = 0 //disable dialogue dialogue = 0 means that it is not active
 </string>
           </argument>
         </arguments>
@@ -138,7 +138,6 @@ alarm[1] = 420
 
 alarm[0] = 1800 // for random quotes
 */
-
 </string>
           </argument>
         </arguments>

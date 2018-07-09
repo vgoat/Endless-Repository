@@ -35,6 +35,7 @@
         }   
         global.Money -= 7500
         global.TurretDamageBought = 1
+        global.TurretCost += 1000
     }
     else
     {
@@ -71,6 +72,7 @@
         }   
         global.Money -= 7500
         global.TurretDamageBought = 1
+        global.TurretCost += 1000
     }
     else
     {

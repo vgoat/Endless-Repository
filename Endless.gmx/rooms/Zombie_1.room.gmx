@@ -736,7 +736,7 @@
     <instance objName="obj_TurretBase" x="4640" y="2656" name="inst_F50E55E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_EnemySpawn1" x="6400" y="2400" name="inst_5F127E90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_EnemySpawn1" x="4736" y="224" name="inst_0D45F9A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_EnemySpawn1" x="224" y="224" name="inst_641B54F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_EnemySpawn1" x="192" y="160" name="inst_641B54F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_EnemySpawn1" x="512" y="2336" name="inst_0240C478" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_EnemySpawn1" x="2112" y="3680" name="inst_F5B44DCF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ShotgunMineStation" x="5152" y="672" name="inst_9C9688CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -848,6 +848,7 @@
     <instance objName="obj_BorderWall" x="672" y="892" name="inst_2EAF9615" locked="0" code="" scaleX="17.3799991607666" scaleY="3.25" colour="4294967295" rotation="-29"/>
     <instance objName="obj_BorderWall" x="708" y="1032" name="inst_6BB6176B" locked="0" code="" scaleX="6.46999979019165" scaleY="2.0625" colour="4294967295" rotation="-28"/>
     <instance objName="obj_BorderWall" x="708" y="1123" name="inst_CB663697" locked="0" code="" scaleX="2.47000002861023" scaleY="4.51999998092651" colour="4294967295" rotation="30"/>
+    <instance objName="obj_Turret_Idle" x="4640" y="2656" name="inst_165F47A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

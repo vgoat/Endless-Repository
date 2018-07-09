@@ -36,6 +36,7 @@
         global.Money -= 2250
         global.ShotgunMineCarry = 1
         global.ShotgunMineMax = 10
+        global.ShotgunMineCost += 200
     }
     else
     {
@@ -76,6 +77,7 @@ global.ShotgunMineDamage = 0;
         global.Money -= 2250
         global.ShotgunMineCarry = 1
         global.ShotgunMineMax = 10
+        global.ShotgunMineCost += 200
     }
     else
     {
