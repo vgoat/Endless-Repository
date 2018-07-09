@@ -722,7 +722,7 @@ case 2: {audio_play_sound(ALAM2,1,false)} break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>WeaponNext() //to go to next weapon
+            <string>WeaponNext()  //to go to next weapon
 
 </string>
           </argument>

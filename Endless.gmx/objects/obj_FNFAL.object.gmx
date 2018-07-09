@@ -660,30 +660,7 @@ case 2: {audio_play_sound(ALAM2,1,false)} break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-//make global values equal one so you can't shoot them based on when you switched weapons
-scr_ExecuteWeaponShootShits()
-scr_StopAllReloads() //for stoping reload sounds
-
-//this is so it goes down the only one that goes back to the last one is the pistol
-global.ArrayValue -= 1 //this is to use universal variable
-    
-with (global.ActivePlayer)
-{
-    instance_change(global.WeaponArray[global.ArrayValue],false) //changes to last weapon you own
-}
-    
-with(global.ActiveAmmoBar) //this changes items for bars and their totals
-{
-    instance_change(global.AmmoBarArray[global.ArrayValue],false);
-}
-    
-with(obj_FNFALAmmoAmount) 
-{
-    instance_change(global.AmmoAmountArray[global.ArrayValue],false);
-}
-    
-
+            <string>WeaponPrev() //to go to previous weapon
 </string>
           </argument>
         </arguments>
@@ -706,7 +683,7 @@ with(obj_FNFALAmmoAmount)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>    WeaponPrev() //to go to previous weapon
+            <string>WeaponNext()  //to go to previous weapon
 </string>
           </argument>
         </arguments>

@@ -1,6 +1,6 @@
 if(global.ShotgunBought == 1) // if purchase of shotgun is true
 {
-    instance_create(view_xview[0] + 224,view_yview[0] + 128,obj_BoughtShotgun)
+    instance_create(view_xview[0] + 224,view_yview[0] + 128,obj_GunBought)
 }
 else
 {
@@ -9,7 +9,7 @@ else
 
 if(global.MP9Bought == 1) // if purchase of mp9 is true BITCH!!!
 {
-    instance_create(view_xview[0] + 672,view_yview[0] + 128,obj_MP9Bought)
+    instance_create(view_xview[0] + 672,view_yview[0] + 128,obj_GunBought)
 }
 else
 {
@@ -19,7 +19,7 @@ else
 
 if(global.M4Bought == 1) // if purchase of shotgun is true
 {
-    instance_create(view_xview[0] + 1120,view_yview[0] + 128,obj_M4Bought)
+    instance_create(view_xview[0] + 1120,view_yview[0] + 128,obj_GunBought)
 }
 else
 {
@@ -28,7 +28,7 @@ else
 
 if(global.DesertEagleBought == 1) // if purchase of Desert Eagle
 {
-    instance_create(view_xview[0] + 1568,view_yview[0] + 128,obj_DesertEagleBought)
+    instance_create(view_xview[0] + 1568,view_yview[0] + 128,obj_GunBought)
 }
 else
 {
@@ -37,7 +37,7 @@ else
 
 if(global.SniperBought == 1) // if purchase of shotgun is true
 {
-    instance_create(view_xview[0] + 224,view_yview[0] + 352,obj_SniperBought)
+    instance_create(view_xview[0] + 224,view_yview[0] + 352,obj_GunBought)
 }
 else
 {
@@ -46,7 +46,7 @@ else
 
 if(global.G11Bought == 1) // if purchase of G11 muta fuka
 {
-    instance_create(view_xview[0] + 672,view_yview[0] + 352,obj_G11Bought)
+    instance_create(view_xview[0] + 672,view_yview[0] + 352,obj_GunBought)
 }
 else
 {
@@ -55,7 +55,7 @@ else
 
 if(global.FNFALBought == 1) // if purchase of FNFAL
 {
-    instance_create(view_xview[0] + 1120,view_yview[0] + 352,obj_FNFALBought)
+    instance_create(view_xview[0] + 1120,view_yview[0] + 352,obj_GunBought)
 }
 else
 {
@@ -64,7 +64,7 @@ else
 
 if(global.AK12Bought == 1) // if purchase of FNFAL
 {
-    instance_create(view_xview[0] + 1568,view_yview[0] + 352,obj_AK12Bought)
+    instance_create(view_xview[0] + 1568,view_yview[0] + 352,obj_GunBought)
 }
 else
 {
@@ -73,7 +73,7 @@ else
 
 if(global.M60Bought == 1) // if purchase of M60 muta fuka
 {
-    instance_create(view_xview[0] + 224,view_yview[0] + 576,obj_M60Bought)
+    instance_create(view_xview[0] + 224,view_yview[0] + 576,obj_GunBought)
 }
 else
 {
@@ -82,7 +82,7 @@ else
 
 if(global.ScorcherBought == 1) // if purchase of FNFAL
 {
-    instance_create(view_xview[0] + 672,view_yview[0] + 576,obj_ScorcherBought)
+    instance_create(view_xview[0] + 672,view_yview[0] + 576,obj_GunBought)
 }
 else
 {
@@ -91,7 +91,7 @@ else
 
 if(global.XL79Bought == 1) // if purchase of XL79
 {
-    instance_create(view_xview[0] + 1120,view_yview[0] + 576,obj_XL79Bought)
+    instance_create(view_xview[0] + 1120,view_yview[0] + 576,obj_GunBought)
 }
 else
 {
@@ -100,7 +100,7 @@ else
 
 if(global.MG42Bought == 1) // if purchase of MG42
 {
-    instance_create(view_xview[0] + 1568,view_yview[0] + 576,obj_MG42Bought)
+    instance_create(view_xview[0] + 1568,view_yview[0] + 576,obj_GunBought)
 }
 else
 {
@@ -109,7 +109,7 @@ else
 
 if(global.AT4Bought == 1) // if purchase of MG42
 {
-    instance_create(view_xview[0] + 224,view_yview[0] + 800,obj_AT4Bought)
+    instance_create(view_xview[0] + 224,view_yview[0] + 800,obj_GunBought)
 }
 else
 {
@@ -127,7 +127,7 @@ else
 
 if(global.BMGBought == 1) // if purchase of 50bmg
 {
-    instance_create(view_xview[0] + 672,view_yview[0] + 800,obj_50BMGBought)
+    instance_create(view_xview[0] + 672,view_yview[0] + 800,obj_GunBought)
 }
 else
 {
@@ -136,7 +136,7 @@ else
 
 if(global.MinigunBought == 1) // if purchase of Minigun
 {
-    instance_create(view_xview[0] + 1120,view_yview[0] + 800,obj_MinigunBought)
+    instance_create(view_xview[0] + 1120,view_yview[0] + 800,obj_GunBought)
 }
 else
 {
@@ -145,7 +145,7 @@ else
 
 if(global.HODBought == 1) // if purchase of HOD
 {
-    instance_create(view_xview[0] + 1568,view_yview[0] + 800,obj_HODBought)
+    instance_create(view_xview[0] + 1568,view_yview[0] + 800,obj_GunBought)
 }
 else
 {

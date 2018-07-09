@@ -31,7 +31,7 @@
     {
         with(id)
         {
-            instance_change(obj_MinigunBought,false)
+            instance_change(obj_GunBought,false)
         }
     
         global.AmountOfGuns += 1
@@ -76,7 +76,7 @@
     {
         with(id)
         {
-            instance_change(obj_MinigunBought,false)
+            instance_change(obj_GunBought,false)
         }
     
         global.AmountOfGuns += 1

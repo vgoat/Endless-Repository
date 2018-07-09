@@ -349,24 +349,8 @@
             <sprite>sprites\spr_NitroBuy</sprite>
           </sprites>
           <sprites name="Bought">
-            <sprite>sprites\spr_ShotGunBought</sprite>
-            <sprite>sprites\spr_M4Bought</sprite>
-            <sprite>sprites\spr_SniperBought</sprite>
-            <sprite>sprites\spr_MP9Bought</sprite>
-            <sprite>sprites\spr_M60Bought</sprite>
-            <sprite>sprites\spr_DesertEagleBought</sprite>
-            <sprite>sprites\spr_G11Bought</sprite>
-            <sprite>sprites\spr_FNFALBought</sprite>
-            <sprite>sprites\spr_AK12Bought</sprite>
-            <sprite>sprites\spr_ScorcherBought</sprite>
+            <sprite>sprites\spr_GunBought</sprite>
             <sprite>sprites\spr_AA12Bought</sprite>
-            <sprite>sprites\spr_XL79Bought</sprite>
-            <sprite>sprites\spr_MG42Bought</sprite>
-            <sprite>sprites\spr_AT4Bought</sprite>
-            <sprite>sprites\spr_Shoty360Bought</sprite>
-            <sprite>sprites\spr_50BMGBought</sprite>
-            <sprite>sprites\spr_MinigunBought</sprite>
-            <sprite>sprites\spr_HODBought</sprite>
             <sprite>sprites\spr_DROPOGMBought</sprite>
             <sprite>sprites\spr_NitroBought</sprite>
           </sprites>
@@ -783,23 +767,7 @@
             <object>objects\obj_DROPOGMBuy</object>
           </objects>
           <objects name="Bought">
-            <object>objects\obj_BoughtShotgun</object>
-            <object>objects\obj_M4Bought</object>
-            <object>objects\obj_SniperBought</object>
-            <object>objects\obj_MP9Bought</object>
-            <object>objects\obj_M60Bought</object>
-            <object>objects\obj_DesertEagleBought</object>
-            <object>objects\obj_G11Bought</object>
-            <object>objects\obj_FNFALBought</object>
-            <object>objects\obj_AK12Bought</object>
-            <object>objects\obj_ScorcherBought</object>
-            <object>objects\obj_XL79Bought</object>
-            <object>objects\obj_MG42Bought</object>
-            <object>objects\obj_AT4Bought</object>
-            <object>objects\obj_Shoty360Bought</object>
-            <object>objects\obj_50BMGBought</object>
-            <object>objects\obj_MinigunBought</object>
-            <object>objects\obj_HODBought</object>
+            <object>objects\obj_GunBought</object>
             <object>objects\obj_DROPOGMBought</object>
             <object>objects\obj_AA12Bought</object>
             <object>objects\obj_NitroBought</object>
