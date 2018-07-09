@@ -693,6 +693,9 @@
             <object>objects\obj_MainZombieDead</object>
           </objects>
         </objects>
+        <objects name="Experimental">
+          <object>objects\p3hwn1e_experimental_enemy</object>
+        </objects>
       </objects>
       <objects name="Controller Objects">
         <object>objects\obj_WaveController</object>
@@ -805,6 +808,7 @@
       <room>rooms\Zombie_1Dup</room>
       <room>rooms\Zombie_2</room>
     </rooms>
+    <room>rooms\room10</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
