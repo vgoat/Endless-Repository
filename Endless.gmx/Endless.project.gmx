@@ -157,6 +157,7 @@
       <sprite>sprites\scr_Pause</sprite>
       <sprite>sprites\spr_UpgradesBackdrop</sprite>
       <sprite>sprites\spr_Icon</sprite>
+      <sprite>sprites\spr_Bullshit</sprite>
     </sprites>
     <sprites name="Menus">
       <sprites name="Start_Screen">
