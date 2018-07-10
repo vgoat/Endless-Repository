@@ -16,7 +16,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y)
+         direction = global.ActivePlayer.image_angle
          image_angle = direction
 
          //etc
@@ -26,7 +26,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) + 1
+         direction = global.ActivePlayer.image_angle
          image_angle = direction         
          //etc
      }
@@ -35,7 +35,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) - 1
+         direction = global.ActivePlayer.image_angle - 1
          image_angle = direction
          //etc
      }
@@ -44,7 +44,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) + 2
+         direction = global.ActivePlayer.image_angle + 2
          image_angle = direction
          //etc
      }
@@ -53,7 +53,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) -2
+         direction = global.ActivePlayer.image_angle -2
          image_angle = direction
          //etc
      }
@@ -62,7 +62,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) + 3
+         direction = global.ActivePlayer.image_angle + 3
          image_angle = direction
          //etc
      }
@@ -71,7 +71,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) -3 
+         direction = global.ActivePlayer.image_angle -3 
          image_angle = direction
          //etc
      }
@@ -80,7 +80,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) + 4
+         direction = global.ActivePlayer.image_angle + 4
          image_angle = direction
          //etc
      }
@@ -89,26 +89,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) -4
-         image_angle = direction
-         //etc
-     }
-     
-     
-           var obj = instance_create(x, y,obj_ShotGunPellet); //create moving bullet towards facing area
-     with(obj) 
-     {
-         speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) + 5
-         image_angle = direction
-         //etc
-     }
-     
-      var obj = instance_create(x, y,obj_ShotGunPellet); //create moving bullet towards facing area
-     with(obj) 
-     {
-         speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) -5 
+         direction = global.ActivePlayer.image_angle -4
          image_angle = direction
          //etc
      }
@@ -118,7 +99,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) + 6
+         direction = global.ActivePlayer.image_angle + 5
          image_angle = direction
          //etc
      }
@@ -127,7 +108,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) -6
+         direction = global.ActivePlayer.image_angle -5 
          image_angle = direction
          //etc
      }
@@ -137,7 +118,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) + 7
+         direction = global.ActivePlayer.image_angle + 6
          image_angle = direction
          //etc
      }
@@ -146,7 +127,26 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) -7
+         direction = global.ActivePlayer.image_angle -6
+         image_angle = direction
+         //etc
+     }
+     
+     
+           var obj = instance_create(x, y,obj_ShotGunPellet); //create moving bullet towards facing area
+     with(obj) 
+     {
+         speed = 40;
+         direction = global.ActivePlayer.image_angle + 7
+         image_angle = direction
+         //etc
+     }
+     
+      var obj = instance_create(x, y,obj_ShotGunPellet); //create moving bullet towards facing area
+     with(obj) 
+     {
+         speed = 40;
+         direction = global.ActivePlayer.image_angle -7
          image_angle = direction
          //etc
      }
@@ -155,7 +155,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) + 8
+         direction = global.ActivePlayer.image_angle + 8
          image_angle = direction
          //etc
      }
@@ -164,7 +164,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) -8
+         direction = global.ActivePlayer.image_angle -8
          image_angle = direction
          //etc
      }
@@ -173,7 +173,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) + 9
+         direction = global.ActivePlayer.image_angle + 9
          image_angle = direction
          //etc
      }
@@ -182,7 +182,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) -9
+         direction = global.ActivePlayer.image_angle -9
          image_angle = direction
          //etc
      }
@@ -191,7 +191,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) + 10
+         direction = global.ActivePlayer.image_angle + 10
          image_angle = direction
          //etc
      }
@@ -200,7 +200,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) -10
+         direction = global.ActivePlayer.image_angle -10
          image_angle = direction
          //etc
      }
@@ -209,7 +209,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) + 11
+         direction = global.ActivePlayer.image_angle + 11
          image_angle = direction
          //etc
      }
@@ -218,7 +218,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) -11
+         direction = global.ActivePlayer.image_angle -11
          image_angle = direction
          //etc
      }
@@ -227,7 +227,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) + 12
+         direction = global.ActivePlayer.image_angle + 12
          image_angle = direction
          //etc
      }
@@ -236,7 +236,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) -12
+         direction = global.ActivePlayer.image_angle -12
          image_angle = direction
          //etc
      }
@@ -245,7 +245,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) + 13
+         direction = global.ActivePlayer.image_angle + 13
          image_angle = direction
          //etc
      }
@@ -254,7 +254,7 @@ global.NitroMag -= 1
      with(obj) 
      {
          speed = 40;
-         direction = point_direction(x,y,mouse_x,mouse_y) -13
+         direction = global.ActivePlayer.image_angle -13
          image_angle = direction
          //etc
      }

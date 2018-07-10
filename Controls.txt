@@ -1,4 +1,13 @@
 Keyboard Controls
+WASD - Movement
+Left Click - Shoot
+Q and E or Mouse Wheel - Weapon Switch
+F - Place C4
+G - Blow Up C4
+T - Place Shotgun Mine
+Tab - Go to Menu for guns and Upgrades
+Right Click or R  - Reload 
+
 H - Use Health Pack
 N - Give Yourself 10k (Temporary)
 
@@ -10,3 +19,10 @@ Right Thumbstick - Aim
 Left and Right Triggers - Shoot
 Left Button - Prev Weapon
 Right Button - Next Weapon
+Game Pad Up - Health Pack
+Game Pad Down - Place Shotgun Mine
+Game Pad Left - Add 10k
+Game Pad Select - Go to Menu for Guns and Upgrades
+B - Place C4
+A - Blow Up C4
+X - Reload
