@@ -36,7 +36,7 @@
         global.Money -= 1500
         global.MedPackMax = 5 //the upgrade
         global.MedPackUpgradeBought = 1 //for gui shit
-        global.HPCost += global.HPCost
+        global.HPCost += 150
     }
     else
     {

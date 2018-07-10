@@ -73,7 +73,7 @@
         }   
         global.Money -= 3500
         global.C4CarryAmmountBought = 1
-        global.C4Max = 10 //for gui shit
+        global.C4Max = 7 //for gui shit
         global.C4Cost += 50
     }
     else

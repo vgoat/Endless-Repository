@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>if (gamepad_button_check_released(0, gp_shoulderrb) || gamepad_button_check_released(0, gp_shoulderlb))
 {
-    if (global.Money &gt;= 3500)
+    if (global.Money &gt;= 12500)
     {
         with(id)
         {
@@ -35,9 +35,9 @@
         }
     
         global.AmountOfGuns += 1
-        global.Money -= 3500
+        global.Money -= 12500
         global.HODBought = 1
-        global.AmmoAmountPurchase += 1750
+        global.AmmoAmountPurchase += 6250
         
         //add the shotgun...
         global.WeaponArray[global.AmountOfGuns] = obj_HOD
@@ -72,7 +72,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.Money &gt;= 3500)
+            <string>if (global.Money &gt;= 12500)
     {
         with(id)
         {
@@ -80,9 +80,9 @@
         }
     
         global.AmountOfGuns += 1
-        global.Money -= 3500
+        global.Money -= 12500
         global.HODBought = 1
-        global.AmmoAmountPurchase += 1750
+        global.AmmoAmountPurchase += 6250
         
         //add the shotgun...
         global.WeaponArray[global.AmountOfGuns] = obj_HOD
