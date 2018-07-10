@@ -33,22 +33,22 @@
 
     if (global.ShotgunBought == 1)
     {
-        global.ShotgunAmmo = 80
+        global.ShotgunAmmo = 56
     }
     
       if (global.M4Bought == 1)
     {
-        global.M4Ammo = 450
+        global.M4Ammo = 360
     }
     
       if (global.SniperBought == 1)
     {
-        global.SniperAmmo = 80
+        global.SniperAmmo = 75
     }
     
       if (global.MP9Bought == 1)
     {
-        global.MP9Ammo = 300
+        global.MP9Ammo = 270
     }
     
       if (global.M60Bought == 1)
@@ -88,7 +88,7 @@
     
     if (global.AA12Bought == 1)
     {
-        global.AA12Ammo = 120
+        global.AA12Ammo = 180
     }
     
     if (global.FNFALBought == 1)
@@ -123,12 +123,12 @@
     
     if (global.DROPOGMBought == 1)
     {
-        global.DROPOGMAmmo = 100
+        global.DROPOGMAmmo = 250
     }
     
     if (global.NitroBought == 1)
     {
-        global.NitroAmmo = 50
+        global.NitroAmmo = 100
     }
 
     }
