@@ -1,0 +1,12 @@
+Keyboard Controls
+H - Use Health Pack
+N - Give Yourself 10k (Temporary)
+
+
+Controller Controls (Xbox Style)
+
+Left Thumbstick - Move
+Right Thumbstick - Aim
+Left and Right Triggers - Shoot
+Left Button - Prev Weapon
+Right Button - Next Weapon
