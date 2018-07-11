@@ -259,6 +259,11 @@
     {
         global.DROPOGMAmmo = 100
     }
+    
+      if (global.NitroBought == 1)
+    {
+        global.NitroAmmo = 100
+    }
 
 }
 else
