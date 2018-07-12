@@ -729,20 +729,15 @@
     <instance objName="obj_BorderWall" x="96" y="0" name="inst_1435BA54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_BorderWall" x="64" y="0" name="inst_0F64C6E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_BorderWall" x="32" y="0" name="inst_52725D06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_EnemySpawn1" x="672" y="1984" name="inst_5443B86F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_EnemySpawn1" x="3488" y="2624" name="inst_91ED6CE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_EnemySpawn1" x="4640" y="1472" name="inst_757A2183" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TurretBase" x="3062" y="1898" name="inst_BF509397" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TurretBase" x="4640" y="2656" name="inst_F50E55E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_EnemySpawn1" x="6400" y="2400" name="inst_5F127E90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_EnemySpawn1" x="4736" y="224" name="inst_0D45F9A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_EnemySpawn1" x="192" y="160" name="inst_641B54F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_EnemySpawn1" x="512" y="2336" name="inst_0240C478" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_EnemySpawn1" x="2112" y="3680" name="inst_F5B44DCF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ShotgunMineStation" x="5152" y="672" name="inst_9C9688CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_DrawMines" x="960" y="-128" name="inst_775E2556" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_DrawC4" x="992" y="-128" name="inst_5454798A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Pistol" x="1888" y="2176" name="inst_90CA99AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Pistol" x="992" y="2304" name="inst_90CA99AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_BorderWall" x="448" y="1504" name="inst_41FB99D9" locked="0" code="" scaleX="3" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_BorderWall" x="1024" y="1504" name="inst_37B7537F" locked="0" code="" scaleX="4" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="obj_BorderWall" x="807" y="1921" name="inst_3527C7D1" locked="0" code="" scaleX="4.84000015258789" scaleY="7.48000001907349" colour="4294967295" rotation="44"/>
@@ -849,10 +844,10 @@
     <instance objName="obj_BorderWall" x="708" y="1032" name="inst_6BB6176B" locked="0" code="" scaleX="6.46999979019165" scaleY="2.0625" colour="4294967295" rotation="-28"/>
     <instance objName="obj_BorderWall" x="708" y="1123" name="inst_CB663697" locked="0" code="" scaleX="2.47000002861023" scaleY="4.51999998092651" colour="4294967295" rotation="30"/>
     <instance objName="obj_Turret_Idle" x="4640" y="2656" name="inst_165F47A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ZombieType1" x="2144" y="1856" name="inst_45037109" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_SlowFucker" x="2400" y="1984" name="inst_7E026F59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_FastFucker" x="2400" y="1728" name="inst_E5E8A19A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Slicer" x="2048" y="1632" name="inst_8FA5E8B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ZombieType1" x="2240" y="1920" name="inst_81D5F3C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_SlowFucker" x="2240" y="2048" name="inst_CBC8BAD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FastFucker" x="2240" y="2176" name="inst_81975ACC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Slicer" x="2240" y="2304" name="inst_A47C3559" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

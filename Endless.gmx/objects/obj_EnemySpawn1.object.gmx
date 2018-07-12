@@ -79,54 +79,51 @@ spawn4 = true
 {//This is for create instance of currnet value
     //this will stay at 0 for awhile for base enemies
     //if statements will change this or spawn certain things
-    instance_create(x,y,p3hwn1e_experimental_enemy)
+    instance_create(x, y, obj_ZombieType1);
     spawn = false
     alarm[0] = 30
 }
 
 
 if (global.Wave &gt;= 10)
-{
-    if floor(random(global.FatFuckSpawn)) &lt; 1 &amp;&amp; spawn = true
-        {//This is for create instance of currnet value
-        //this will stay at 0 for awhile for base enemies
-        //if statements will change this or spawn certain things
-        instance_create(x,y,obj_SlowFucker)
-        }
-        
-}
+  {
+   if floor(random (global.FatFuckSpawn) ) &lt; 1 &amp;&amp; spawn = true
+     {//This is for create instance of currnet value
+      //this will stay at 0 for awhile for base enemies
+      //if statements will change this or spawn certain things
+      instance_create(x, y, obj_SlowFucker)
+     }
+  }
 
 if (global.Wave &gt;= 15)
-{
-    FFuckerAmount = instance_number(obj_FastFucker)
-    if(FFuckerAmount &lt;= 5)
-    {
-        if floor(random(global.FastFuckSpawn)) &lt; 1 &amp;&amp; spawn = true
-        {//This is for create instance of currnet value
-        //this will stay at 0 for awhile for base enemies
-        //if statements will change this or spawn certain things
-        instance_create(x,y,obj_FastFucker)
-        }
-
+  {
+   FFuckerAmount = instance_number(obj_FastFucker)
+   
+if (FFuckerAmount &lt;= 5)
+  {
+   if floor(random(global.FastFuckSpawn)) &lt; 1 &amp;&amp; spawn = true
+     {//This is for create instance of currnet value
+      //this will stay at 0 for awhile for base enemies
+      //if statements will change this or spawn certain things
+      instance_create(x, y, obj_FastFucker)
     }
+  }
 }
 
 
 if (global.Wave &gt;= 20)
-{
-    if floor(random(global.SlicerSpawn)) &lt; 1 &amp;&amp; spawn = true
-    {//This is for create instance of currnet value
-    //this will stay at 0 for awhile for base enemies
-    //if statements will change this or spawn certain things
-    instance_create(x,y,obj_Slicer)
-    }
+  {
+   if floor(random (global.SlicerSpawn) ) &lt; 1 &amp;&amp; spawn = true
+     {//This is for create instance of currnet value
+      //this will stay at 0 for awhile for base enemies
+      //if statements will change this or spawn certain things
+      instance_create(x, y, obj_Slicer)
+     }
 
 }
 
-
-
- //global.FatFuckSpawn = 
-    //global.FastFuckSpawn
+//global.FatFuckSpawn = 
+//global.FastFuckSpawn
 </string>
           </argument>
         </arguments>

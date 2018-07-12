@@ -25,6 +25,48 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Initzialation of pathfinding
+
+var cell_width = 32; //These variabels determines the size of the pathfinding grid.
+var cell_height = 32;
+
+var hcells = room_width div cell_width; //Some unimportant math
+var vcells = room_height div cell_height;
+
+enemypath = mp_grid_create(0, 0, hcells, vcells, cell_width, cell_height); //Stroes the grid details
+
+//Swapped with parent objects - Matt
+mp_grid_add_instances(enemypath, obj_WallParent, true); //This determines what the enemy is going to avoid.
+
+//mp_grid_add_instances(enemypath, obj_BorderWall, true); //This determines what the enemy is going to avoid.
+
+if instance_exists(obj_CharecterParent) //Checks to see that the player exists, if it does it sets the pathfinding target to the player.
+{
+mx = (obj_CharecterParent.x div 16)*16+8
+my = (obj_CharecterParent.y div 16)*16+8
+}
+
+path = path_add(); // creates the path finding path.
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Anim Shit
 dostuff = true
 Hit = true
@@ -204,6 +246,48 @@ image_angle = point_direction(x, y, global.WeaponArray[global.ArrayValue].x, glo
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Pathfinding - NEW
+image_angle = direction;
+
+if !path_exists(path)
+  {
+    path = path_add()
+  }
+  
+  //OBJ PISTOL replace with parent object for efficiency
+if instance_exists(obj_CharecterParent)
+  {
+    mx = (obj_CharecterParent.x div 32)*32+16
+    my = (obj_CharecterParent.y div 32)*32+16
+  }
+
+if instance_exists(obj_CharecterParent)
+  {
+   if (mp_grid_path(enemypath, path, x, y, mx, my, 1))
+     {
+      path_start(path, 2.5, path_action_stop, false)
+     }
+  }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Death and Animation and Death Noise
 image_speed = .25
 
@@ -304,6 +388,8 @@ if (CantSeeYou == 0) // 0 means can
         alarm[1] = .5
     }
 }
+
+/*
 if(active == 1)
     { 
         var Near = instance_nearest(x,y,obj_CharecterParent)

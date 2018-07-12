@@ -122,7 +122,9 @@ p3hwn1e_experimental_enemy.image_speed = 5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var cell_width = 32; //These variabels determines the size of the pathfinding grid.
+            <string>///Initzialation of pathfinding
+
+var cell_width = 32; //These variabels determines the size of the pathfinding grid.
 var cell_height = 32;
 
 var hcells = room_width div cell_width; //Some unimportant math
