@@ -52,7 +52,7 @@
             <sound>sound\MG42Fire</sound>
             <sound>sound\AT4Fire</sound>
             <sound>sound\AT4Explosion</sound>
-            <sound>sound\Shoty360FireandLoad</sound>
+            <sound>sound\ShotgunMineShotandLoad</sound>
             <sound>sound\snd_50BMGFire</sound>
             <sound>sound\MinigunFire</sound>
             <sound>sound\HODFire</sound>
@@ -580,6 +580,7 @@
             <object>objects\obj_TurretBullet</object>
             <object>objects\obj_ShotGunPellet</object>
             <object>objects\obj_AA12Bullet</object>
+            <object>objects\obj_ShotgunMineBullet</object>
             <object>objects\obj_PistolBullet</object>
             <object>objects\obj_MP9Bullet</object>
             <object>objects\obj_M60Bullet</object>

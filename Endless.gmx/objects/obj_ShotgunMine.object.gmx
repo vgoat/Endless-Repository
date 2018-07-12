@@ -31,7 +31,7 @@ if en!=noone
 {
     if distance_to_object(en)&lt;=50
     {
-        var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+        var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -40,7 +40,7 @@ if en!=noone
         //etc
     }
         
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -49,7 +49,7 @@ if en!=noone
         //etc
     }
         
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -58,7 +58,7 @@ if en!=noone
         //etc
     }
         
-     var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+     var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -67,7 +67,7 @@ if en!=noone
         //etc
     }
     
-     var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+     var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -76,7 +76,7 @@ if en!=noone
         //etc
     }
     
-     var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+     var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -85,7 +85,7 @@ if en!=noone
         //etc
     }
     
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -94,7 +94,7 @@ if en!=noone
         //etc
     }
     
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -103,7 +103,7 @@ if en!=noone
         //etc
     }
     
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -112,7 +112,7 @@ if en!=noone
         //etc
     }
     
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -121,7 +121,7 @@ if en!=noone
         //etc
     }
     
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -130,7 +130,7 @@ if en!=noone
         //etc
     }
     
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -139,7 +139,7 @@ if en!=noone
         //etc
     }
     
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -148,7 +148,7 @@ if en!=noone
         //etc
     }
     
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -157,7 +157,7 @@ if en!=noone
         //etc
     }
     
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -166,7 +166,7 @@ if en!=noone
         //etc
     }
     
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -175,7 +175,7 @@ if en!=noone
         //etc
     }
     
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -184,7 +184,7 @@ if en!=noone
         //etc
     }
     
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -193,7 +193,7 @@ if en!=noone
         //etc
     }
     
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -202,7 +202,7 @@ if en!=noone
         //etc
     }
     
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -211,7 +211,7 @@ if en!=noone
         //etc
     }
     
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -220,7 +220,7 @@ if en!=noone
         //etc
     }
     
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -229,7 +229,7 @@ if en!=noone
         //etc
     }
     
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -238,7 +238,7 @@ if en!=noone
         //etc
     }
 
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -247,7 +247,7 @@ if en!=noone
         //etc
     }
 
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -256,7 +256,7 @@ if en!=noone
         //etc
     }
 
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -265,7 +265,7 @@ if en!=noone
         //etc
     }
 
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -274,7 +274,7 @@ if en!=noone
         //etc
     }
 
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -283,7 +283,7 @@ if en!=noone
         //etc
     }
 
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -292,7 +292,7 @@ if en!=noone
         //etc
     }
 
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -301,7 +301,7 @@ if en!=noone
         //etc
     }
 
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -310,7 +310,7 @@ if en!=noone
         //etc
     }
 
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -319,7 +319,7 @@ if en!=noone
         //etc
     }
 
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -328,7 +328,7 @@ if en!=noone
         //etc
     }
 
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -337,7 +337,7 @@ if en!=noone
         //etc
     }
 
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -346,7 +346,7 @@ if en!=noone
         //etc
     }
 
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -355,7 +355,7 @@ if en!=noone
         //etc
     }
 
-    var obj = instance_create(x, y,obj_Shoty360Bullet); //create moving bullet towards facing area
+    var obj = instance_create(x, y,obj_ShotgunMineBullet); //create moving bullet towards facing area
     with(obj) 
     {
         speed = 40;
@@ -364,7 +364,7 @@ if en!=noone
         //etc
     }
     
-    audio_play_sound(Shoty360FireandLoad,1,false)
+    audio_play_sound(ShotgunMineShotandLoad,1,false)
     instance_destroy()
     }
     //Try this for through walls
