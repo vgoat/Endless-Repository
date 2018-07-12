@@ -93,29 +93,8 @@ Hit = true
           <argument>
             <kind>1</kind>
             <string>///Wave Based Stuff Health Shit
-ZombiePoints = 175
 active = 1
-
-if(global.Wave &gt; 1 and global.Wave &lt;10)
-{
-    if (global.HardOrNah == 0){ZombiePoints = 175}; //health}
-    if (global.HardOrNah == 1){ZombiePoints = 225}; //health
-    if (global.HardOrNah == 2){ZombiePoints = 275}; //health}
-}
-
-if(global.Wave &gt; 11 and global.Wave &lt;20)
-{
-    if (global.HardOrNah == 0){ZombiePoints = 225}; //health}
-    if (global.HardOrNah == 1){ZombiePoints = 275}; //health
-    if (global.HardOrNah == 2){ZombiePoints = 325}; //health}
-}
-
-if(global.Wave &gt; 21 and global.Wave &lt;30)
-{
-    if (global.HardOrNah == 0){ZombiePoints = 300}; //health}
-    if (global.HardOrNah == 1){ZombiePoints = 350}; //health
-    if (global.HardOrNah == 2){ZombiePoints = 400}; //health}
-}
+ZombiePoints = global.FastFuckerSHealth
 
 
 ZombieAttack = 1; //for delay of attacking
@@ -380,10 +359,10 @@ if (CantSeeYou == 0) // 0 means can
         with(obj)
         {
             direction = point_direction(x,y,Near.x,Near.y)
-            speed = 12.5
+            speed = 10.5
         }
         
-        alarm[0] = 45
+        alarm[0] = 75
         image_single = 1
         alarm[1] = .5
     }
@@ -476,11 +455,11 @@ audio_play_sound(DROPOGMExplosion,1,false)
             <kind>1</kind>
             <string>if(global.BulletDamageBought == 0) //For Damage Uppy
 {
-    ZombiePoints = ZombiePoints - 300 //minus health
+    ZombiePoints = ZombiePoints - 250//minus health
 }
 else
 {
-    ZombiePoints = ZombiePoints - 375 //minus health
+    ZombiePoints = ZombiePoints - 325 //minus health
 }
 
 instance_create(x,y, obj_BloodDroplets) //create droplets

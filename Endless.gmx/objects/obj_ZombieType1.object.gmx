@@ -93,34 +93,9 @@ Hit = true
           <argument>
             <kind>1</kind>
             <string>///Health and Wave BasedHealth
-ZombiePoints = 100
 active = 1
-
-if(global.Wave &gt; 1 and global.Wave &lt;10)
-{
-    if (global.HardOrNah == 0){ZombiePoints = 100}; //health}
-    if (global.HardOrNah == 1){ZombiePoints = 150}; //health
-    if (global.HardOrNah == 2){ZombiePoints = 225}; //health}
-}
-
-if(global.Wave &gt; 11 and global.Wave &lt;20)
-{
-    if (global.HardOrNah == 0){ZombiePoints = 150}; //health}
-    if (global.HardOrNah == 1){ZombiePoints = 200}; //health
-    if (global.HardOrNah == 2){ZombiePoints = 275}; //health}
-}
-
-if(global.Wave &gt; 21 and global.Wave &lt;30)
-{
-    if (global.HardOrNah == 0){ZombiePoints = 225}; //health}
-    if (global.HardOrNah == 1){ZombiePoints = 275}; //health
-    if (global.HardOrNah == 2){ZombiePoints = 325}; //health}
-}
-
-
+ZombiePoints = global.BaseZombieSHealth
 ZombieAttack = 1; //for delay of attacking
-
-
 
 image_angle = direction
 
@@ -534,11 +509,11 @@ audio_play_sound(DROPOGMExplosion,1,false)
             <kind>1</kind>
             <string>if(global.BulletDamageBought == 0) //For Damage Uppy
 {
-    ZombiePoints = ZombiePoints - 300 //minus health
+    ZombiePoints = ZombiePoints - 250//minus health
 }
 else
 {
-    ZombiePoints = ZombiePoints - 375 //minus health
+    ZombiePoints = ZombiePoints - 325 //minus health
 }
 
 instance_create(x,y, obj_BloodDroplets) //create droplets
@@ -2317,7 +2292,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -2356,7 +2331,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -2395,7 +2370,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -2434,7 +2409,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -2473,7 +2448,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -2512,7 +2487,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -2551,7 +2526,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -2559,6 +2534,7 @@ global.HealthPoints -= 5; //take 5 health from charecter
     {
         obj_HealthBarUpgraded.image_index += 5;
     }
+
 ZombieAttack = 0 //make it so this is enabled in alarm
 alarm[0] = 30
 }
@@ -2589,7 +2565,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -2628,7 +2604,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -2667,7 +2643,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -2706,7 +2682,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -2745,7 +2721,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -2784,7 +2760,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -2823,7 +2799,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -2862,7 +2838,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -2901,7 +2877,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -2912,7 +2888,6 @@ global.HealthPoints -= 5; //take 5 health from charecter
 
 ZombieAttack = 0 //make it so this is enabled in alarm
 alarm[0] = 30
-
 }
 </string>
           </argument>
@@ -2941,7 +2916,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -2980,7 +2955,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -3019,7 +2994,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -3058,7 +3033,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -3097,7 +3072,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 5; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=5 // make correct bar index
     }
@@ -3108,7 +3083,6 @@ global.HealthPoints -= 5; //take 5 health from charecter
 
 ZombieAttack = 0 //make it so this is enabled in alarm
 alarm[0] = 30
-
 }
 </string>
           </argument>
