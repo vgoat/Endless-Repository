@@ -849,6 +849,8 @@
     <instance objName="obj_BorderWall" x="708" y="1032" name="inst_6BB6176B" locked="0" code="" scaleX="6.46999979019165" scaleY="2.0625" colour="4294967295" rotation="-28"/>
     <instance objName="obj_BorderWall" x="708" y="1123" name="inst_CB663697" locked="0" code="" scaleX="2.47000002861023" scaleY="4.51999998092651" colour="4294967295" rotation="30"/>
     <instance objName="obj_Turret_Idle" x="4640" y="2656" name="inst_165F47A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TurretBase" x="2080" y="1728" name="inst_19D4AD24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Turret_Idle" x="2080" y="1728" name="inst_69D1FE0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
