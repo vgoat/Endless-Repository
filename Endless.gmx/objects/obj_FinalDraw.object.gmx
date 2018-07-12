@@ -76,12 +76,15 @@ draw_text(view_xview[0] + 180,view_yview[0] + 410 ,"Shots Fired") //so it change
 draw_text(view_xview[0] + 180,view_yview[0] + 490 ,"Final Money") //so it changes other fonts back the items below this make it so the wave is the only different font
 draw_text(view_xview[0] + 180,view_yview[0] + 570 ,"Time Survived")//so it changes other fonts back the items below this make it so the wave is the only different font
 draw_text(view_xview[0] + 180,view_yview[0] + 650 ,"Score") //so it changes other fonts back the items below this make it so the wave is the only different font
+draw_text(view_xview[0] + 180,view_yview[0] + 730 ,"Wave") //so it changes other fonts back the items below this make it so the wave is the only different font
+
 
 draw_text(view_xview[0] + 1260,view_yview[0] + 330 ,string(global.KillCount)) //so it changes other fonts back the items below this make it so the wave is the only different font
 draw_text(view_xview[0] + 1260,view_yview[0] + 410 ,string(global.ShotsFired)) //so it changes other fonts back the items below this make it so the wave is the only different font
 draw_text(view_xview[0] + 1260,view_yview[0] + 490 ,"$" + string(global.Money)) //so it changes other fonts back the items below this make it so the wave is the only different font
 draw_text(view_xview[0] + 1260,view_yview[0] + 570 ,string(global.GameplayHours) + ":" + string(global.GameplayMinutes) + ":" + string(global.GameplaySeconds))//so it changes other fonts back the items below this make it so the wave is the only different font
 draw_text(view_xview[0] + 1260,view_yview[0] + 650 ,string(global.Score)) //so it changes other fonts back the items below this make it so the wave is the only different font
+draw_text(view_xview[0] + 1260,view_yview[0] + 730 ,string(global.Wave)) //so it changes other fonts back the items below this make it so the wave is the only different font
 
 
 

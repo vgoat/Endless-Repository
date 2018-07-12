@@ -52,6 +52,8 @@ Hit = true
             <kind>1</kind>
             <string>///Wave Health and Health Stuff
 ZombiePoints = 300
+CantSeeYou = 1
+active = 1
 
 if(global.Wave &gt; 1 and global.Wave &lt;10)
 {
@@ -240,7 +242,7 @@ if(chance &lt;= 1) // one out of 6....
           <argument>
             <kind>1</kind>
             <string>///Sight Check
-CantSeeYou = 0;
+//CantSeeYou = 0;
 
 // What this does is if its line of sight hits the particular object means it won't do anything
 var Near = instance_nearest(x,y,obj_CharecterParent)

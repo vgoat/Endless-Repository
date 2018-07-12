@@ -28,6 +28,7 @@
             <string>///Anim Stuff
 dostuff = true
 Hit = true
+
  obj_Slicer.image_index = 0;
  obj_Slicer.image_speed = 5;
 </string>
@@ -52,6 +53,7 @@ Hit = true
             <kind>1</kind>
             <string>///Wave Health and Shit
 ZombiePoints = 600
+active = 1
 
 if(global.Wave &gt; 1 and global.Wave &lt;10)
 {

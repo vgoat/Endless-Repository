@@ -52,6 +52,7 @@ Hit = true
             <kind>1</kind>
             <string>///Wave Based Stuff Health Shit
 ZombiePoints = 175
+active = 1
 
 if(global.Wave &gt; 1 and global.Wave &lt;10)
 {
