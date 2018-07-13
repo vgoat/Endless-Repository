@@ -75,7 +75,7 @@ spawn4 = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if floor(random(global.ChanceOfSpawn)) &lt; 1 &amp;&amp; spawn = true
+            <string>if floor(random(global.ChanceOfSpawn)) &lt; 1 &amp;&amp; spawn = true &amp;&amp; global.EnemiesActive &lt;= 99
 {//This is for create instance of currnet value
     //this will stay at 0 for awhile for base enemies
     //if statements will change this or spawn certain things
@@ -87,7 +87,7 @@ spawn4 = true
 
 if (global.Wave &gt;= 10)
   {
-   if floor(random (global.FatFuckSpawn) ) &lt; 1 &amp;&amp; spawn = true
+   if floor(random (global.FatFuckSpawn) ) &lt; 1 &amp;&amp; spawn = true &amp;&amp; global.EnemiesActive &lt;= 99
      {//This is for create instance of currnet value
       //this will stay at 0 for awhile for base enemies
       //if statements will change this or spawn certain things
@@ -101,7 +101,7 @@ if (global.Wave &gt;= 15)
    
 if (FFuckerAmount &lt;= 5)
   {
-   if floor(random(global.FastFuckSpawn)) &lt; 1 &amp;&amp; spawn = true
+   if floor(random(global.FastFuckSpawn)) &lt; 1 &amp;&amp; spawn = true &amp;&amp; global.EnemiesActive &lt;= 99
      {//This is for create instance of currnet value
       //this will stay at 0 for awhile for base enemies
       //if statements will change this or spawn certain things
@@ -113,7 +113,7 @@ if (FFuckerAmount &lt;= 5)
 
 if (global.Wave &gt;= 20)
   {
-   if floor(random (global.SlicerSpawn) ) &lt; 1 &amp;&amp; spawn = true
+   if floor(random (global.SlicerSpawn) ) &lt; 1 &amp;&amp; spawn = true &amp;&amp; global.EnemiesActive &lt;= 99
      {//This is for create instance of currnet value
       //this will stay at 0 for awhile for base enemies
       //if statements will change this or spawn certain things

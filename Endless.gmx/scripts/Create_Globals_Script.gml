@@ -22,6 +22,7 @@ global.GameIsPaused = 0
 global.IAmPaused = false
 global.drawimage = 1
 global.drawturret = 1
+global.EnemiesActive = 0
 
 
 ///this is for upgrades and stuff for gui
