@@ -30,7 +30,7 @@
 image_index = index; //make the index the choice
 image_speed = 0; //make the speed 0 so it doesn't flash
 
-alarm[0] = 9000 //set alarm for destruction
+alarm[0] = 4500 //set alarm for destruction
 
 
 </string>
