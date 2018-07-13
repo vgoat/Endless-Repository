@@ -476,6 +476,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\WaveFont</font>
+    <font>fonts\EnemyCount</font>
     <font>fonts\ScoreandWaveFont</font>
     <font>fonts\GunBuy</font>
     <font>fonts\DeathFont</font>
@@ -649,6 +650,7 @@
             <object>objects\obj_ControllerReticle</object>
             <object>objects\obj_WaveBox</object>
             <object>objects\obj_DrawWave</object>
+            <object>objects\obj_DrawEnemiesAmmount</object>
             <object>objects\obj_DrawMoney</object>
             <object>objects\obj_DrawScore</object>
             <object>objects\obj_DrawMedpacks</object>
