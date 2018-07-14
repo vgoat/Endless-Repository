@@ -23,6 +23,7 @@ global.IAmPaused = false
 global.drawimage = 1
 global.drawturret = 1
 global.EnemiesActive = 0
+global.EnemiesActiveMax = 14
 
 
 ///this is for upgrades and stuff for gui
@@ -208,6 +209,7 @@ global.BulletDamageBought = 0;
 global.AutoPistolUpgrade = 0;
 global.ShotgunMineCarry = 0;
 global.ShotgunMineDamage = 0;
+global.MoneyAccumulator = 0;
 
 
 

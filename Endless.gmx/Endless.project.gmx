@@ -406,6 +406,7 @@
           <sprite>sprites\spr_BuyAutoPistol</sprite>
           <sprite>sprites\spr_ShotgunAmmoCarryUpgrade</sprite>
           <sprite>sprites\spr_ShotgunDamageUpgrade</sprite>
+          <sprite>sprites\spr_MoneyAccumulator</sprite>
         </sprites>
         <sprites name="Bought">
           <sprite>sprites\spr_MovementSpeedBought</sprite>
@@ -419,6 +420,7 @@
           <sprite>sprites\spr_TurretDamageBought</sprite>
           <sprite>sprites\spr_ShotgunAmmoCarryUpgradeBought</sprite>
           <sprite>sprites\spr_ShotgunDamageUpgradeBought</sprite>
+          <sprite>sprites\spr_MoneyAccumulatorBought</sprite>
         </sprites>
       </sprites>
       <sprite>sprites\spr_PauseBackDrop</sprite>
@@ -708,12 +710,12 @@
         <object>objects\obj_EnemySpawn1</object>
       </objects>
       <objects name="Pause_Screen / Gun  Buys">
-        <object>objects\obj_AmmoPurchasePrice</object>
+        <object>objects\obj_AmmoPurchasePrice_Money</object>
         <object>objects\obj_GoToUpgrade</object>
         <object>objects\obj_GoToPause</object>
         <object>objects\obj_DrawBackground</object>
         <objects name="Upgrades Menu">
-          <object>objects\obj_C4Cost</object>
+          <object>objects\obj_C4Cost_Money</object>
           <object>objects\obj_HPCost</object>
           <object>objects\obj_TurretCost</object>
           <object>objects\obj_ShotgunMineCost</object>
@@ -729,6 +731,7 @@
             <object>objects\obj_AutoPistol</object>
             <object>objects\obj_ShotgunAmmoCarry</object>
             <object>objects\obj_ShotgunDamage</object>
+            <object>objects\obj_MoneyAccumulator</object>
           </objects>
           <objects name="Bought">
             <object>objects\obj_MovementSpeedBought</object>
@@ -742,6 +745,7 @@
             <object>objects\obj_AutoPistolBought</object>
             <object>objects\obj_ShotgunAmmoCarryBought</object>
             <object>objects\obj_ShotgunDamageBought</object>
+            <object>objects\obj_MoneyAccumulatorBought</object>
           </objects>
         </objects>
         <objects name="Buttons">

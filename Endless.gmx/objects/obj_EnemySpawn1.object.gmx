@@ -75,7 +75,93 @@ spawn4 = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if floor(random(global.ChanceOfSpawn)) &lt; 1 &amp;&amp; spawn = true &amp;&amp; global.EnemiesActive &lt;= 99
+            <string>/// Amount of max enemies
+if(global.Wave &gt;= 1 and global.Wave &lt;10)
+{
+    global.EnemiesActiveMax = 14
+}
+
+if(global.Wave &gt; 11 and global.Wave &lt;20)
+{
+    global.EnemiesActiveMax = 24
+}
+
+if(global.Wave &gt; 21 and global.Wave &lt;30)
+{
+    global.EnemiesActiveMax = 34
+}
+
+if(global.Wave &gt; 31 and global.Wave &lt;40)
+{
+    global.EnemiesActiveMax = 44
+}
+
+if(global.Wave &gt; 41 and global.Wave &lt;50)
+{
+    global.EnemiesActiveMax = 54
+}
+
+if(global.Wave &gt; 51 and global.Wave &lt;60)
+{
+    global.EnemiesActiveMax = 64
+}
+
+if(global.Wave &gt; 61 and global.Wave &lt;70)
+{
+    global.EnemiesActiveMax = 74
+}
+
+if(global.Wave &gt; 71 and global.Wave &lt;80)
+{
+    global.EnemiesActiveMax = 84
+}
+
+if(global.Wave &gt; 81 and global.Wave &lt;90)
+{
+    global.EnemiesActiveMax = 94
+}
+
+if(global.Wave &gt; 91 and  global.Wave &lt; 100) 
+{
+    global.EnemiesActiveMax = 104
+}
+
+if(global.Wave &gt; 101 and global.Wave &lt; 110) 
+{
+    global.EnemiesActiveMax = 114
+}
+
+if(global.Wave &gt; 111 and global.Wave &lt; 120) 
+{
+    global.EnemiesActiveMax = 124
+}
+
+if(global.Wave &gt; 121) // Expand This more so it doesn't just revert to base values or some bullshit
+{
+    global.EnemiesActiveMax = 124 // Test Later
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Spawning Enemies
+if floor(random(global.ChanceOfSpawn)) &lt; 1 &amp;&amp; spawn = true &amp;&amp; global.EnemiesActive &lt;= global.EnemiesActiveMax
 {//This is for create instance of currnet value
     //this will stay at 0 for awhile for base enemies
     //if statements will change this or spawn certain things
@@ -87,7 +173,7 @@ spawn4 = true
 
 if (global.Wave &gt;= 10)
   {
-   if floor(random (global.FatFuckSpawn) ) &lt; 1 &amp;&amp; spawn = true &amp;&amp; global.EnemiesActive &lt;= 99
+   if floor(random (global.FatFuckSpawn) ) &lt; 1 &amp;&amp; spawn = true &amp;&amp; global.EnemiesActive &lt;= global.EnemiesActiveMax
      {//This is for create instance of currnet value
       //this will stay at 0 for awhile for base enemies
       //if statements will change this or spawn certain things
@@ -101,7 +187,7 @@ if (global.Wave &gt;= 15)
    
 if (FFuckerAmount &lt;= 5)
   {
-   if floor(random(global.FastFuckSpawn)) &lt; 1 &amp;&amp; spawn = true &amp;&amp; global.EnemiesActive &lt;= 99
+   if floor(random(global.FastFuckSpawn)) &lt; 1 &amp;&amp; spawn = true &amp;&amp; global.EnemiesActive &lt;= global.EnemiesActiveMax
      {//This is for create instance of currnet value
       //this will stay at 0 for awhile for base enemies
       //if statements will change this or spawn certain things
@@ -113,7 +199,7 @@ if (FFuckerAmount &lt;= 5)
 
 if (global.Wave &gt;= 20)
   {
-   if floor(random (global.SlicerSpawn) ) &lt; 1 &amp;&amp; spawn = true &amp;&amp; global.EnemiesActive &lt;= 99
+   if floor(random (global.SlicerSpawn) ) &lt; 1 &amp;&amp; spawn = true &amp;&amp; global.EnemiesActive &lt;= global.EnemiesActiveMax
      {//This is for create instance of currnet value
       //this will stay at 0 for awhile for base enemies
       //if statements will change this or spawn certain things

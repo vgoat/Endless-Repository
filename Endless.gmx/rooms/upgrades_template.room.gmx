@@ -54,12 +54,12 @@
     <instance objName="obj_MovementSpeedBuy" x="192" y="192" name="inst_1871C2ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_MedPackHoldingBuy" x="192" y="320" name="inst_13C491CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_HealthUpgradeBuy" x="192" y="448" name="inst_1A5C9DE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_BulletDamageBuy" x="320" y="608" name="inst_7DB6ABF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_BulletDamageBuy" x="192" y="608" name="inst_7DB6ABF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_C4CarryBuy" x="512" y="192" name="inst_CBB020DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TurretAmmoBuy" x="512" y="320" name="inst_A5047907" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ExplosiveRadiusBuy" x="672" y="608" name="inst_10D6AC9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ExplosiveRadiusBuy" x="512" y="608" name="inst_10D6AC9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TurretDamageBuy" x="512" y="448" name="inst_306EFA46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_C4Cost" x="1228" y="288" name="inst_28F0535B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_C4Cost_Money" x="1228" y="288" name="inst_28F0535B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TurretCost" x="1228" y="192" name="inst_0D6E730D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_HPCost" x="1228" y="96" name="inst_7D1A5120" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_AutoPistol" x="768" y="448" name="inst_80C7F64F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -70,6 +70,7 @@
     <instance objName="obj_ShotgunDamage" x="768" y="320" name="inst_DB04144E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_MainMenuPM" x="416" y="928" name="inst_5FFBCA87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_QuitPS" x="1600" y="928" name="inst_2AF15280" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_MoneyAccumulator" x="768" y="608" name="inst_132B61FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

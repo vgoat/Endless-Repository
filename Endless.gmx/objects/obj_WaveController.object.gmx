@@ -217,11 +217,32 @@ if(global.Wave &gt; 81 and global.Wave &lt;90)
     if (global.HardOrNah == 2){global.BaseZombieSHealth = 775}; //health}
 }
 
-if(global.Wave &gt; 91 ) // Expand This more so it doesn't just revert to base values or some bullshit
+if(global.Wave &gt; 91 and global.Wave &lt; 100 ) // Expand This more so it doesn't just revert to base values or some bullshit
 {
     if (global.HardOrNah == 0){global.BaseZombieSHealth = 750}; //health}
     if (global.HardOrNah == 1){global.BaseZombieSHealth = 800}; //health
     if (global.HardOrNah == 2){global.BaseZombieSHealth = 850}; //health}
+}
+
+if(global.Wave &gt; 101 and global.Wave &lt; 110 ) // Expand This more so it doesn't just revert to base values or some bullshit
+{
+    if (global.HardOrNah == 0){global.BaseZombieSHealth = 825}; //health}
+    if (global.HardOrNah == 1){global.BaseZombieSHealth = 875}; //health
+    if (global.HardOrNah == 2){global.BaseZombieSHealth = 925}; //health}
+}
+
+if(global.Wave &gt; 111 and global.Wave &lt; 120 ) // Expand This more so it doesn't just revert to base values or some bullshit
+{
+    if (global.HardOrNah == 0){global.BaseZombieSHealth = 900}; //health}
+    if (global.HardOrNah == 1){global.BaseZombieSHealth = 950}; //health
+    if (global.HardOrNah == 2){global.BaseZombieSHealth = 1000}; //health}
+}
+
+if(global.Wave &gt; 121) // Expand This more so it doesn't just revert to base values or some bullshit
+{
+    if (global.HardOrNah == 0){global.BaseZombieSHealth = 975}; //health}
+    if (global.HardOrNah == 1){global.BaseZombieSHealth = 1025}; //health
+    if (global.HardOrNah == 2){global.BaseZombieSHealth = 1075}; //health}
 }
 
 // Slow Fucker
@@ -288,11 +309,32 @@ if(global.Wave &gt; 81 and global.Wave &lt;90)
     if (global.HardOrNah == 2){global.SlowFuckerSHealth = 975}; //health}
 }
 
-if(global.Wave &gt; 91 ) // Expand As Needed
+if(global.Wave &gt; 91 and global.Wave &lt; 100 ) // Expand As Needed
 {
     if (global.HardOrNah == 0){global.SlowFuckerSHealth = 950}; //health}
     if (global.HardOrNah == 1){global.SlowFuckerSHealth = 1000}; //health
     if (global.HardOrNah == 2){global.SlowFuckerSHealth = 1050}; //health}
+}
+
+if(global.Wave &gt; 101 and global.Wave &lt; 110 ) // Expand As Needed
+{
+    if (global.HardOrNah == 0){global.SlowFuckerSHealth = 1025}; //health}
+    if (global.HardOrNah == 1){global.SlowFuckerSHealth = 1075}; //health
+    if (global.HardOrNah == 2){global.SlowFuckerSHealth = 1125}; //health}
+}
+
+if(global.Wave &gt; 111 and global.Wave &lt; 120 ) // Expand As Needed
+{
+    if (global.HardOrNah == 0){global.SlowFuckerSHealth = 1100}; //health}
+    if (global.HardOrNah == 1){global.SlowFuckerSHealth = 1150}; //health
+    if (global.HardOrNah == 2){global.SlowFuckerSHealth = 1200}; //health}
+}
+
+if(global.Wave &gt; 121 ) // Expand As Needed
+{
+    if (global.HardOrNah == 0){global.SlowFuckerSHealth = 1175}; //health}
+    if (global.HardOrNah == 1){global.SlowFuckerSHealth = 1225}; //health
+    if (global.HardOrNah == 2){global.SlowFuckerSHealth = 1275}; //health}
 }
 
 // Fast Fucker
@@ -360,12 +402,35 @@ if(global.Wave &gt; 81 and global.Wave &lt;90)
     if (global.HardOrNah == 2){global.FastFuckerSHealth = 850}; //health}
 }
 
-if(global.Wave &gt; 91 ) // Expand as needed
+if(global.Wave &gt; 91 and global.Wave &lt; 100 ) // Expand as needed
 {
     if (global.HardOrNah == 0){global.FastFuckerSHealth = 825}; //health}
     if (global.HardOrNah == 1){global.FastFuckerSHealth = 875}; //health
     if (global.HardOrNah == 2){global.FastFuckerSHealth = 925}; //health}
     
+}
+
+if(global.Wave &gt; 101 and global.Wave &lt; 110 ) // Expand as needed
+{
+    if (global.HardOrNah == 0){global.FastFuckerSHealth = 900}; //health}
+    if (global.HardOrNah == 1){global.FastFuckerSHealth = 950}; //health
+    if (global.HardOrNah == 2){global.FastFuckerSHealth = 1000}; //health}
+    
+}
+
+if(global.Wave &gt; 111 and global.Wave &lt; 120 ) // Expand as needed
+{
+    if (global.HardOrNah == 0){global.FastFuckerSHealth = 975}; //health}
+    if (global.HardOrNah == 1){global.FastFuckerSHealth = 1025}; //health
+    if (global.HardOrNah == 2){global.FastFuckerSHealth = 1075}; //health}
+    
+}
+
+if(global.Wave &gt; 121 ) // Expand as needed
+{
+    if (global.HardOrNah == 0){global.FastFuckerSHealth = 1050}; //health}
+    if (global.HardOrNah == 1){global.FastFuckerSHealth = 1100}; //health
+    if (global.HardOrNah == 2){global.FastFuckerSHealth = 1150}; //health}
     
 }
 
@@ -434,11 +499,32 @@ if(global.Wave &gt; 81 and global.Wave &lt;90)
     if (global.HardOrNah == 2){global.SlicerSHealth = 1450}; //health}
 }
 
-if(global.Wave &gt; 91 ) // Expand as needed
+if(global.Wave &gt; 91 and global.Wave &lt; 100) // Expand as needed
 {
     if (global.HardOrNah == 0){global.SlicerSHealth = 1450}; //health}
     if (global.HardOrNah == 1){global.SlicerSHealth = 1500}; //health
     if (global.HardOrNah == 2){global.SlicerSHealth = 1550}; //health}
+}
+
+if(global.Wave &gt; 101 and global.Wave &lt; 110) // Expand as needed
+{
+    if (global.HardOrNah == 0){global.SlicerSHealth = 1525}; //health}
+    if (global.HardOrNah == 1){global.SlicerSHealth = 1575}; //health
+    if (global.HardOrNah == 2){global.SlicerSHealth = 1625}; //health}
+}
+
+if(global.Wave &gt; 111 and global.Wave &lt; 120) // Expand as needed
+{
+    if (global.HardOrNah == 0){global.SlicerSHealth = 1600}; //health}
+    if (global.HardOrNah == 1){global.SlicerSHealth = 1650}; //health
+    if (global.HardOrNah == 2){global.SlicerSHealth = 1700}; //health}
+}
+
+if(global.Wave &gt; 121) // Expand as needed
+{
+    if (global.HardOrNah == 0){global.SlicerSHealth = 1675}; //health}
+    if (global.HardOrNah == 1){global.SlicerSHealth = 1725}; //health
+    if (global.HardOrNah == 2){global.SlicerSHealth = 1775}; //health}
 }
 
 

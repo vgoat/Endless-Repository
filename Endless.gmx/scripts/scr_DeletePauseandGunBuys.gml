@@ -3,7 +3,7 @@ with(obj_QuitPS){instance_destroy()}
 
 with(obj_MainMenuPM) {instance_destroy()} 
 
-with(obj_AmmoPurchasePrice) {instance_destroy()} 
+with(obj_AmmoPurchasePrice_Money) {instance_destroy()} 
 
 with(obj_GoToUpgrade) {instance_destroy()} 
 
