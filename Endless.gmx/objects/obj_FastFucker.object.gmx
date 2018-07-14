@@ -279,31 +279,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -487,31 +484,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -592,31 +586,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -739,31 +730,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -827,52 +815,49 @@ KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
             <kind>1</kind>
             <string>if(Hit = true)
 {
-if(global.BulletDamageBought == 0) //For Damage Uppy
-{
-    ZombiePoints = ZombiePoints - 12 //minus health
-}
-else
-{
-    ZombiePoints = ZombiePoints - 15.75 //minus health
-}
-
-instance_create(x,y, obj_BloodDroplets) //create droplets
-
-if ZombiePoints &lt;= 0
-{
-    instance_create(x,y,obj_BloodSplatter)//create splatter
-    instance_destroy();//destroy instance
-    
-    if(global.MoneyAccumulator == 1)
+    if(global.BulletDamageBought == 0) //For Damage Uppy
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        ZombiePoints = ZombiePoints - 12 //minus health
     }
-    
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        ZombiePoints = ZombiePoints - 15.75 //minus health
     }
     
+    instance_create(x,y, obj_BloodDroplets) //create droplets
     
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-}
-Hit = false
-alarm[4] = 5
+    if ZombiePoints &lt;= 0
+    {
+        instance_create(x,y,obj_BloodSplatter)//create splatter
+        instance_destroy();//destroy instance
+        
+        if(global.MoneyAccumulator == 1)
+        {
+            global.Score += 150
+            global.Money += 150
+            global.KillCount += 1
+        }
+        
+        else
+        {
+            instance_create(x,y,obj_Cash150)
+            global.Score += 150
+            global.KillCount += 1
+        }
+    
+        var chance;
+        chance = random(6); // out of 6
+        
+        if(chance &lt;= 1) // one out of 6....
+        {
+            audio_play_sound(Zombie_Death,1,false)
+           
+        }
+        
+        KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    }
+    Hit = false
+    alarm[4] = 5
 }
 
 </string>
@@ -958,31 +943,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -1062,31 +1044,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -1166,31 +1145,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -1270,31 +1246,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -1374,31 +1347,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -1478,31 +1448,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -1582,31 +1549,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -1686,31 +1650,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -1790,31 +1751,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -1894,31 +1852,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -1998,31 +1953,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -2102,31 +2054,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -2217,31 +2166,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -2294,31 +2240,28 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-    global.Score += 150
-    global.Money += 150
-    global.KillCount += 1
+        global.Score += 150
+        global.Money += 150
+        global.KillCount += 1
     }
     
     else
     {
-    instance_create(x,y,obj_Cash150)
-    global.Score += 150
-    global.KillCount += 1
+        instance_create(x,y,obj_Cash150)
+        global.Score += 150
+        global.KillCount += 1
+    }
+
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
     }
     
-    
-
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>

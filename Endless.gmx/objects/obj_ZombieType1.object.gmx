@@ -294,40 +294,40 @@ image_angle = direction //current direction equals angle
 
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 </string>
           </argument>
@@ -533,40 +533,40 @@ instance_create(x,y, obj_BloodDroplets) //create droplets
 
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 </string>
           </argument>
@@ -642,40 +642,40 @@ instance_create(x,y, obj_BloodDroplets) //create droplets
 
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 </string>
           </argument>
@@ -791,42 +791,43 @@ else
 
 instance_create(x,y, obj_BloodDroplets)//create droplets
 
+
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 </string>
           </argument>
@@ -901,43 +902,36 @@ alarm[3]= 420//this for the purpose of dialogue occuring less
     
     instance_create(x,y, obj_BloodDroplets) //create droplets
     
+
     if ZombiePoints &lt;= 0
-{
-    var Dead = instance_create(x,y,obj_MainZombieDead)
-    instance_destroy();//destroy instance
-    with(Dead)
     {
-        image_angle = other.image_angle
+        instance_create(x,y,obj_BloodSplatter)//create splatter
+        instance_destroy();//destroy instance
+        
+        if(global.MoneyAccumulator == 1)
+        {
+            global.Score += 50
+            global.Money += 50
+            global.KillCount += 1
+        }
+        else
+        {
+            global.Score += 50
+            instance_create(x,y,obj_Cash50)
+            global.KillCount += 1
+        }
+        
+        var chance;
+        chance = random(6); // out of 6
+        
+        if(chance &lt;= 1) // one out of 6....
+        {
+            audio_play_sound(Zombie_Death,1,false)
+           
+        }
+        
+        KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
     }
-    if (global.MoneyAccumulator  == 1)
-    {
-        global.Money += 50
-        global.Score += 50
-        global.KillCount += 1
-    }
-    else
-    {
-        instance_create(x,y,obj_Cash50)//create splatter
-        global.Score += 50
-        global.KillCount += 1 //for counter
-    }
-    
-    
-    var chance;
-    chance = random(6); // out of 6
-    
-    if(chance &lt;= 1) // one out of 6....
-    {
-        audio_play_sound(Zombie_Death,1,false)
-       
-    }
-    
-    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-    if(global.DialogueActive == 1)
-    {
-    alarm[3]= 420//this for the purpose of dialogue occuring less
-    }
-}
     
     Hit = false
     alarm[4] = 5
@@ -1020,40 +1014,40 @@ instance_create(x,y, obj_BloodDroplets) //create droplets
 
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 </string>
           </argument>
@@ -1128,40 +1122,40 @@ instance_create(x,y, obj_BloodDroplets) //create droplets
 
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 </string>
           </argument>
@@ -1236,40 +1230,40 @@ instance_create(x,y, obj_BloodDroplets)//create droplets
 
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 </string>
           </argument>
@@ -1344,40 +1338,40 @@ instance_create(x,y, obj_BloodDroplets)//create droplets
 
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 </string>
           </argument>
@@ -1452,40 +1446,40 @@ instance_create(x,y, obj_BloodDroplets)//create droplets
 
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 </string>
           </argument>
@@ -1560,40 +1554,40 @@ instance_create(x,y, obj_BloodDroplets)//create droplets
 
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 </string>
           </argument>
@@ -1668,40 +1662,40 @@ instance_create(x,y, obj_BloodDroplets) //create droplets
 
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 </string>
           </argument>
@@ -1776,40 +1770,40 @@ instance_create(x,y, obj_BloodDroplets)//create droplets
 
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 </string>
           </argument>
@@ -1884,40 +1878,40 @@ instance_create(x,y, obj_BloodDroplets)//create droplets
 
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 </string>
           </argument>
@@ -1992,40 +1986,40 @@ instance_create(x,y, obj_BloodDroplets) //create droplets
 
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 </string>
           </argument>
@@ -2100,40 +2094,40 @@ instance_create(x,y, obj_BloodDroplets) //create droplets
 
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 </string>
           </argument>
@@ -2208,40 +2202,40 @@ instance_create(x,y, obj_BloodDroplets) //create droplets
 
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 </string>
           </argument>
@@ -2327,40 +2321,40 @@ instance_create(x,y, obj_BloodDroplets)//create droplets
 
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 </string>
           </argument>
@@ -2408,40 +2402,40 @@ instance_create(x,y, obj_BloodDroplets)//create droplets
 
 if ZombiePoints &lt;= 0
 {
-var Dead = instance_create(x,y,obj_MainZombieDead)
-instance_destroy();//destroy instance
-with(Dead)
-{
-    image_angle = other.image_angle
-}
-if (global.MoneyAccumulator  == 1)
-{
-    global.Money += 50
-    global.Score += 50
-    global.KillCount += 1
-}
-else
-{
-    instance_create(x,y,obj_Cash50)//create splatter
-    global.Score += 50
-    global.KillCount += 1 //for counter
-}
+    var Dead = instance_create(x,y,obj_MainZombieDead)
+    instance_destroy();//destroy instance
+    with(Dead)
+    {
+        image_angle = other.image_angle
+    }
+    if (global.MoneyAccumulator  == 1)
+    {
+        global.Money += 50
+        global.Score += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        instance_create(x,y,obj_Cash50)//create splatter
+        global.Score += 50
+        global.KillCount += 1 //for counter
+    }
 
 
-var chance;
-chance = random(6); // out of 6
+    var chance;
+    chance = random(6); // out of 6
 
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-if(global.DialogueActive == 1)
-{
-alarm[3]= 420//this for the purpose of dialogue occuring less
-}
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    if(global.DialogueActive == 1)
+    {
+        alarm[3]= 420//this for the purpose of dialogue occuring less
+    }
 }
 
 
