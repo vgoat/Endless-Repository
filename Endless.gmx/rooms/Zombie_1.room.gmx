@@ -731,7 +731,7 @@
     <instance objName="obj_BorderWall" x="32" y="0" name="inst_52725D06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_EnemySpawn1" x="672" y="1984" name="inst_5443B86F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_EnemySpawn1" x="3488" y="2624" name="inst_91ED6CE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_EnemySpawn1" x="4640" y="1472" name="inst_757A2183" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_EnemySpawn1" x="4864" y="1312" name="inst_757A2183" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TurretBase" x="3062" y="1898" name="inst_BF509397" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TurretBase" x="4695" y="2664" name="inst_F50E55E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_EnemySpawn1" x="6400" y="2400" name="inst_5F127E90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -852,6 +852,22 @@
     <instance objName="obj_TurretBase" x="2080" y="1728" name="inst_19D4AD24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Turret_Idle" x="2080" y="1728" name="inst_69D1FE0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_DrawEnemiesAmmount" x="480" y="-64" name="inst_90349513" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_BorderWall" x="3162" y="3148" name="inst_4E182B9A" locked="0" code="" scaleX="1.71875" scaleY="1.58064520359039" colour="4294967295" rotation="0"/>
+    <instance objName="obj_BorderWall" x="3226" y="3206" name="inst_9575F1BB" locked="0" code="" scaleX="1.71875" scaleY="1.58064520359039" colour="4294967295" rotation="0"/>
+    <instance objName="obj_BorderWall" x="3122" y="3209" name="inst_D7759064" locked="0" code="" scaleX="1.71875" scaleY="1.58064520359039" colour="4294967295" rotation="0"/>
+    <instance objName="obj_BorderWall" x="2451" y="2782" name="inst_2B0CC485" locked="0" code="" scaleX="2.09677410125732" scaleY="3.09375" colour="4294967295" rotation="0"/>
+    <instance objName="obj_BorderWall" x="2450" y="2890" name="inst_B66377A9" locked="0" code="" scaleX="2.09677410125732" scaleY="3.09375" colour="4294967295" rotation="18"/>
+    <instance objName="obj_BorderWall" x="2484" y="2674" name="inst_B4FA7EA7" locked="0" code="" scaleX="2.09677410125732" scaleY="3.09375" colour="4294967295" rotation="-19"/>
+    <instance objName="obj_BorderWall" x="2553" y="2580" name="inst_CB2F87BF" locked="0" code="" scaleX="2.09677410125732" scaleY="3.09375" colour="4294967295" rotation="-37"/>
+    <instance objName="obj_BorderWall" x="2729" y="2572" name="inst_5A96C11B" locked="0" code="" scaleX="-2.35483860969543" scaleY="4.96999979019165" colour="4294967295" rotation="-63"/>
+    <instance objName="obj_BorderWall" x="2859" y="1677" name="inst_60C1B673" locked="0" code="" scaleX="0.77999997138977" scaleY="6.5625" colour="4294967295" rotation="-51"/>
+    <instance objName="obj_BorderWall" x="4468" y="1772" name="inst_A662AED1" locked="0" code="" scaleX="0.25" scaleY="4.55999994277954" colour="4294967295" rotation="59"/>
+    <instance objName="obj_BorderWall" x="4769" y="1851" name="inst_53187F75" locked="0" code="" scaleX="1.75" scaleY="3.125" colour="4294967295" rotation="-25"/>
+    <instance objName="obj_BorderWall" x="4739" y="1928" name="inst_0B8B2604" locked="0" code="" scaleX="1.75" scaleY="3.125" colour="4294967295" rotation="-42"/>
+    <instance objName="obj_BorderWall" x="4680" y="1995" name="inst_926C2EB1" locked="0" code="" scaleX="1.75" scaleY="3.125" colour="4294967295" rotation="-63"/>
+    <instance objName="obj_BorderWall" x="4595" y="1391" name="inst_66E0477D" locked="0" code="" scaleX="3.35483860969543" scaleY="1.58064520359039" colour="4294967295" rotation="-26"/>
+    <instance objName="obj_BorderWall" x="4688" y="1439" name="inst_24E6FDB8" locked="0" code="" scaleX="3.35483860969543" scaleY="1.58064520359039" colour="4294967295" rotation="-44"/>
+    <instance objName="obj_BorderWall" x="4765" y="1516" name="inst_9251BC25" locked="0" code="" scaleX="3.35483860969543" scaleY="1.58064520359039" colour="4294967295" rotation="-64"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
