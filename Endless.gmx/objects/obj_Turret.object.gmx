@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-2</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -164,11 +164,12 @@ if en!=noone
     {
         CantSeeYou = 1
     }
-    
+    /*
     if collision_line(x,y,en.x,en.y,obj_WallParent,false,true) 
     {
         CantSeeYou = 1;
     }
+    */
 }
 
 
@@ -205,7 +206,7 @@ if (CantSeeYou == 0) //Means Can
         with(obj)
         {
             direction = point_direction(x,y,en.x,en.y)
-            speed = 40 
+            speed = 70
             image_angle = point_direction(x,y,en.x,en.y)
         }   
         Turret_Ammo = Turret_Ammo - 1 //Duh...

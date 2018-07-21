@@ -237,6 +237,7 @@
           <sprites name="Bullets">
             <sprite>sprites\spr_PistolBullet</sprite>
             <sprite>sprites\spr_BulletTrace</sprite>
+            <sprite>sprites\spr_TurretBulletTrace</sprite>
             <sprite>sprites\spr_MinigunBullet</sprite>
             <sprite>sprites\spr_ShotGunPellet</sprite>
             <sprite>sprites\spr_Sniper3</sprite>
