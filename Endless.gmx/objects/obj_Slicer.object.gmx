@@ -271,14 +271,14 @@ if ZombiePoints &lt;= 0
     instance_destroy();//destroy instance
     if(global.MoneyAccumulator == 1)
     {
-        global.Money+= 225 //No Creatiion Of Money
-        global.Score += 225
+        global.Money+= 100 //No Creatiion Of Money
+        global.Score += 100
         global.KillCount += 1
     }
     else
     {
-        instance_create(x,y,obj_Cash225)
-        global.Score += 225
+        instance_create(x,y,obj_Cash100)
+        global.Score += 100
         global.KillCount += 1
     }
     
@@ -294,7 +294,6 @@ if ZombiePoints &lt;= 0
     
     KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
-
 
 </string>
           </argument>
@@ -806,14 +805,14 @@ if ZombiePoints &lt;= 0
         instance_destroy();//destroy instance
         if(global.MoneyAccumulator == 1)
         {
-            global.Money+= 225 //No Creatiion Of Money
-            global.Score += 225
+            global.Money+= 100 //No Creatiion Of Money
+            global.Score += 100
             global.KillCount += 1
         }
         else
         {
-            instance_create(x,y,obj_Cash225)
-            global.Score += 225
+            instance_create(x,y,obj_Cash100)
+            global.Score += 100
             global.KillCount += 1
         }
         
@@ -1115,14 +1114,14 @@ if ZombiePoints &lt;= 0
     instance_destroy();//destroy instance
     if(global.MoneyAccumulator == 1)
     {
-        global.Money+= 225 //No Creatiion Of Money
-        global.Score += 225
+        global.Money+= 100 //No Creatiion Of Money
+        global.Score += 100
         global.KillCount += 1
     }
     else
     {
-        instance_create(x,y,obj_Cash225)
-        global.Score += 225
+        instance_create(x,y,obj_Cash100)
+        global.Score += 100
         global.KillCount += 1
     }
     
@@ -1138,6 +1137,7 @@ if ZombiePoints &lt;= 0
     
     KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
+
 </string>
           </argument>
         </arguments>
@@ -1215,14 +1215,14 @@ if ZombiePoints &lt;= 0
     instance_destroy();//destroy instance
     if(global.MoneyAccumulator == 1)
     {
-        global.Money+= 225 //No Creatiion Of Money
-        global.Score += 225
+        global.Money+= 100 //No Creatiion Of Money
+        global.Score += 100
         global.KillCount += 1
     }
     else
     {
-        instance_create(x,y,obj_Cash225)
-        global.Score += 225
+        instance_create(x,y,obj_Cash100)
+        global.Score += 100
         global.KillCount += 1
     }
     
@@ -1238,6 +1238,7 @@ if ZombiePoints &lt;= 0
     
     KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
+
 </string>
           </argument>
         </arguments>
@@ -1315,14 +1316,14 @@ if ZombiePoints &lt;= 0
     instance_destroy();//destroy instance
     if(global.MoneyAccumulator == 1)
     {
-        global.Money+= 225 //No Creatiion Of Money
-        global.Score += 225
+        global.Money+= 100 //No Creatiion Of Money
+        global.Score += 100
         global.KillCount += 1
     }
     else
     {
-        instance_create(x,y,obj_Cash225)
-        global.Score += 225
+        instance_create(x,y,obj_Cash100)
+        global.Score += 100
         global.KillCount += 1
     }
     
@@ -1338,6 +1339,7 @@ if ZombiePoints &lt;= 0
     
     KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
+
 </string>
           </argument>
         </arguments>
@@ -1414,14 +1416,14 @@ if ZombiePoints &lt;= 0
     instance_destroy();//destroy instance
     if(global.MoneyAccumulator == 1)
     {
-        global.Money+= 225 //No Creatiion Of Money
-        global.Score += 225
+        global.Money+= 100 //No Creatiion Of Money
+        global.Score += 100
         global.KillCount += 1
     }
     else
     {
-        instance_create(x,y,obj_Cash225)
-        global.Score += 225
+        instance_create(x,y,obj_Cash100)
+        global.Score += 100
         global.KillCount += 1
     }
     
@@ -1437,6 +1439,7 @@ if ZombiePoints &lt;= 0
     
     KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
+
 </string>
           </argument>
         </arguments>
@@ -1513,14 +1516,14 @@ if ZombiePoints &lt;= 0
     instance_destroy();//destroy instance
     if(global.MoneyAccumulator == 1)
     {
-        global.Money+= 225 //No Creatiion Of Money
-        global.Score += 225
+        global.Money+= 100 //No Creatiion Of Money
+        global.Score += 100
         global.KillCount += 1
     }
     else
     {
-        instance_create(x,y,obj_Cash225)
-        global.Score += 225
+        instance_create(x,y,obj_Cash100)
+        global.Score += 100
         global.KillCount += 1
     }
     
@@ -1536,6 +1539,7 @@ if ZombiePoints &lt;= 0
     
     KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
+
 </string>
           </argument>
         </arguments>
@@ -1613,14 +1617,14 @@ if ZombiePoints &lt;= 0
     instance_destroy();//destroy instance
     if(global.MoneyAccumulator == 1)
     {
-        global.Money+= 225 //No Creatiion Of Money
-        global.Score += 225
+        global.Money+= 100 //No Creatiion Of Money
+        global.Score += 100
         global.KillCount += 1
     }
     else
     {
-        instance_create(x,y,obj_Cash225)
-        global.Score += 225
+        instance_create(x,y,obj_Cash100)
+        global.Score += 100
         global.KillCount += 1
     }
     
@@ -1636,6 +1640,7 @@ if ZombiePoints &lt;= 0
     
     KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
+
 </string>
           </argument>
         </arguments>
@@ -1713,14 +1718,14 @@ if ZombiePoints &lt;= 0
     instance_destroy();//destroy instance
     if(global.MoneyAccumulator == 1)
     {
-        global.Money+= 225 //No Creatiion Of Money
-        global.Score += 225
+        global.Money+= 100 //No Creatiion Of Money
+        global.Score += 100
         global.KillCount += 1
     }
     else
     {
-        instance_create(x,y,obj_Cash225)
-        global.Score += 225
+        instance_create(x,y,obj_Cash100)
+        global.Score += 100
         global.KillCount += 1
     }
     
@@ -1736,6 +1741,7 @@ if ZombiePoints &lt;= 0
     
     KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
+
 </string>
           </argument>
         </arguments>
@@ -1813,14 +1819,14 @@ if ZombiePoints &lt;= 0
     instance_destroy();//destroy instance
     if(global.MoneyAccumulator == 1)
     {
-        global.Money+= 225 //No Creatiion Of Money
-        global.Score += 225
+        global.Money+= 100 //No Creatiion Of Money
+        global.Score += 100
         global.KillCount += 1
     }
     else
     {
-        instance_create(x,y,obj_Cash225)
-        global.Score += 225
+        instance_create(x,y,obj_Cash100)
+        global.Score += 100
         global.KillCount += 1
     }
     
@@ -1836,6 +1842,7 @@ if ZombiePoints &lt;= 0
     
     KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
+
 </string>
           </argument>
         </arguments>
@@ -1913,14 +1920,14 @@ if ZombiePoints &lt;= 0
     instance_destroy();//destroy instance
     if(global.MoneyAccumulator == 1)
     {
-        global.Money+= 225 //No Creatiion Of Money
-        global.Score += 225
+        global.Money+= 100 //No Creatiion Of Money
+        global.Score += 100
         global.KillCount += 1
     }
     else
     {
-        instance_create(x,y,obj_Cash225)
-        global.Score += 225
+        instance_create(x,y,obj_Cash100)
+        global.Score += 100
         global.KillCount += 1
     }
     
@@ -1936,6 +1943,7 @@ if ZombiePoints &lt;= 0
     
     KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
+
 </string>
           </argument>
         </arguments>
@@ -2013,14 +2021,14 @@ if ZombiePoints &lt;= 0
     instance_destroy();//destroy instance
     if(global.MoneyAccumulator == 1)
     {
-        global.Money+= 225 //No Creatiion Of Money
-        global.Score += 225
+        global.Money+= 100 //No Creatiion Of Money
+        global.Score += 100
         global.KillCount += 1
     }
     else
     {
-        instance_create(x,y,obj_Cash225)
-        global.Score += 225
+        instance_create(x,y,obj_Cash100)
+        global.Score += 100
         global.KillCount += 1
     }
     
@@ -2036,6 +2044,7 @@ if ZombiePoints &lt;= 0
     
     KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
+
 </string>
           </argument>
         </arguments>
@@ -2124,14 +2133,14 @@ if ZombiePoints &lt;= 0
     instance_destroy();//destroy instance
     if(global.MoneyAccumulator == 1)
     {
-        global.Money+= 225 //No Creatiion Of Money
-        global.Score += 225
+        global.Money+= 100 //No Creatiion Of Money
+        global.Score += 100
         global.KillCount += 1
     }
     else
     {
-        instance_create(x,y,obj_Cash225)
-        global.Score += 225
+        instance_create(x,y,obj_Cash100)
+        global.Score += 100
         global.KillCount += 1
     }
     
@@ -2147,6 +2156,7 @@ if ZombiePoints &lt;= 0
     
     KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
+
 </string>
           </argument>
         </arguments>
@@ -2197,14 +2207,14 @@ if ZombiePoints &lt;= 0
     instance_destroy();//destroy instance
     if(global.MoneyAccumulator == 1)
     {
-        global.Money+= 225 //No Creatiion Of Money
-        global.Score += 225
+        global.Money+= 100 //No Creatiion Of Money
+        global.Score += 100
         global.KillCount += 1
     }
     else
     {
-        instance_create(x,y,obj_Cash225)
-        global.Score += 225
+        instance_create(x,y,obj_Cash100)
+        global.Score += 100
         global.KillCount += 1
     }
     

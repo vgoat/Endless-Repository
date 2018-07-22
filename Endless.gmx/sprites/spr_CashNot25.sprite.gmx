@@ -20,6 +20,6 @@
   <width>41</width>
   <height>32</height>
   <frames>
-    <frame index="0">images\spr_Cash225_0.png</frame>
+    <frame index="0">images\spr_CashNot25_0.png</frame>
   </frames>
 </sprite>

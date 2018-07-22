@@ -279,15 +279,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 
@@ -484,15 +484,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 
@@ -586,15 +586,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 
@@ -730,15 +730,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 
@@ -833,15 +833,15 @@ if ZombiePoints &lt;= 0
         
         if(global.MoneyAccumulator == 1)
         {
-            global.Score += 150
-            global.Money += 150
+            global.Score += 75
+            global.Money += 75
             global.KillCount += 1
         }
         
         else
         {
-            instance_create(x,y,obj_Cash150)
-            global.Score += 150
+            instance_create(x,y,obj_Cash75)
+            global.Score += 75
             global.KillCount += 1
         }
     
@@ -943,15 +943,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 
@@ -1044,15 +1044,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 
@@ -1145,15 +1145,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 
@@ -1246,15 +1246,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 
@@ -1347,15 +1347,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 
@@ -1448,15 +1448,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 
@@ -1549,15 +1549,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 
@@ -1650,15 +1650,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 
@@ -1751,15 +1751,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 
@@ -1852,15 +1852,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 
@@ -1953,15 +1953,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 
@@ -2054,15 +2054,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 
@@ -2166,15 +2166,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 
@@ -2240,15 +2240,15 @@ if ZombiePoints &lt;= 0
     
     if(global.MoneyAccumulator == 1)
     {
-        global.Score += 150
-        global.Money += 150
+        global.Score += 75
+        global.Money += 75
         global.KillCount += 1
     }
     
     else
     {
-        instance_create(x,y,obj_Cash150)
-        global.Score += 150
+        instance_create(x,y,obj_Cash75)
+        global.Score += 75
         global.KillCount += 1
     }
 

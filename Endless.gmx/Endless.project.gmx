@@ -300,8 +300,8 @@
             <sprite>sprites\spr_ShotgunAmmoTin</sprite>
           </sprites>
           <sprites name="Pick Ups">
-            <sprite>sprites\spr_Cash50</sprite>
-            <sprite>sprites\spr_Cash225</sprite>
+            <sprite>sprites\spr_Cash25</sprite>
+            <sprite>sprites\spr_CashNot25</sprite>
           </sprites>
           <sprites name="Super Turret">
             <sprite>sprites\spr_SuperTurretFlashFull</sprite>
@@ -670,10 +670,10 @@
           <object>objects\obj_WallParent</object>
         </objects>
         <objects name="Pick Ups">
+          <object>objects\obj_Cash25</object>
           <object>objects\obj_Cash50</object>
+          <object>objects\obj_Cash75</object>
           <object>objects\obj_Cash100</object>
-          <object>objects\obj_Cash150</object>
-          <object>objects\obj_Cash225</object>
         </objects>
         <objects name="Super Turret">
           <object>objects\obj_SuperTurretBase</object>
