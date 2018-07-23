@@ -78,7 +78,7 @@ if (global.HardOrNah == 2)
     global.SlicerSpawn = 750
     
     // Enemy Start healths
-    global.BaseZombieSHealth = 200
+    global.BaseZombieSHealth = 225
     global.SlowFuckerSHealth = 400
     global.FastFuckerSHealth = 275
     global.SlicerSHealth = 700

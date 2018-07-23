@@ -868,6 +868,7 @@
     <instance objName="obj_BorderWall" x="4595" y="1391" name="inst_66E0477D" locked="0" code="" scaleX="3.35483860969543" scaleY="1.58064520359039" colour="4294967295" rotation="-26"/>
     <instance objName="obj_BorderWall" x="4688" y="1439" name="inst_24E6FDB8" locked="0" code="" scaleX="3.35483860969543" scaleY="1.58064520359039" colour="4294967295" rotation="-44"/>
     <instance objName="obj_BorderWall" x="4765" y="1516" name="inst_9251BC25" locked="0" code="" scaleX="3.35483860969543" scaleY="1.58064520359039" colour="4294967295" rotation="-64"/>
+    <instance objName="obj_SlowFucker" x="2464" y="1824" name="inst_48ED21B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
