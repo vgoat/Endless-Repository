@@ -93,7 +93,7 @@ dirr = direction;
             <string>with(id)
 {
     instance_change(obj_C4Animation,false)
-    audio_play_sound(AT4Explosion,1,false)
+    audio_play_sound(snd_AT4Explosion,1,false)
     speed = 0
 }
 </string>

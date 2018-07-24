@@ -442,7 +442,7 @@ with obj_Enemy_Parent
        
 }
     
-audio_play_sound(DROPOGMExplosion,1,false)
+audio_play_sound(snd_DROPOGMExplosion,1,false)
 
 </string>
           </argument>
@@ -688,7 +688,7 @@ with obj_Enemy_Parent
        
 }
     
-audio_play_sound(AT4Explosion,1,false)
+audio_play_sound(snd_AT4Explosion,1,false)
 
 </string>
           </argument>

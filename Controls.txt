@@ -22,7 +22,9 @@ Right Button - Next Weapon
 Game Pad Up - Health Pack
 Game Pad Down - Place Shotgun Mine
 Game Pad Left - Add 10k
+Game Pad Right - Go Up 1 Wave
 Game Pad Select - Go to Menu for Guns and Upgrades
 B - Place C4
 A - Blow Up C4
 X - Reload
+Y - Action Button
