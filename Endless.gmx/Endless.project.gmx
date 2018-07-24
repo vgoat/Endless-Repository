@@ -36,7 +36,6 @@
         <sounds name="Guns_and_Reloading">
           <sound>sound\Bullet_Hitting_Wall</sound>
           <sounds name="Gun_Fire">
-
             <sound>sound\snd_Pistol</sound>
             <sound>sound\snd_PumpShotgun</sound>
             <sound>sound\snd_M4</sound>
@@ -60,7 +59,6 @@
             <sound>sound\snd_DROPOGM</sound>
             <sound>sound\snd_DROPOGMExplosion</sound>
             <sound>sound\snd_AA12</sound>
-            
             <sound>sound\snd_SuperTurretFire</sound>
             <sound>sound\snd_Nitro</sound>
           </sounds>
