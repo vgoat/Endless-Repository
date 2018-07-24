@@ -34,7 +34,7 @@
     }
     else
     {
-        audio_play_sound(Dry_Fire,1,false)
+        audio_play_sound(snd_DryFire,1,false)
     }
 }
 </string>
@@ -66,7 +66,7 @@
 }
 else
 {
-    audio_play_sound(Dry_Fire,1,false)
+    audio_play_sound(snd_DryFire,1,false)
 }
     
 </string>

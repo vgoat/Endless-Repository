@@ -17,5 +17,5 @@ if(global.MedPacks >= 1 and global.HealthPoints != global.Health)
     }
     else
     {
-        audio_play_sound(Dry_Fire,1,false)//Prompt that you cant use health....
+        audio_play_sound(snd_DryFire,1,false)//Prompt that you cant use health....
     }

@@ -69,6 +69,6 @@ with(obj)
     //etc
 }
 
-audio_play_sound(Pump_Shotgun,1,false)
+audio_play_sound(snd_PumpShotgun,1,false)
 global.ShootShitPumpShotgun= 0
 alarm[0]=90

@@ -210,7 +210,7 @@ if (CantSeeYou == 0) //Means Can
             image_angle = point_direction(x,y,en.x,en.y)
         }   
         Turret_Ammo = Turret_Ammo - 1 //Duh...
-        audio_play_sound(M4_Shot,1,false)
+        audio_play_sound(snd_M4,1,false)
         alarm[0] = 8
         image_single = 1
         alarm[1] = 10

@@ -205,7 +205,7 @@ if (gamepad_button_check_released(0,gp_shoulderl) or keyboard_check_released(ord
  {
  if(global.PistolMag == 0)//if you try to shoot and mag equals zero
         {
-            audio_play_sound(Dry_Fire,1,false)
+            audio_play_sound(snd_DryFire,1,false)
         }
  } //this code is for releaseing shit and you click for  no ammo
 
@@ -243,7 +243,7 @@ if(global.ShootShitAutoPistol == 1)
             //etc
         }
         
-      audio_play_sound(Desert_Eagle_Firing,1,false)
+      audio_play_sound(snd_Pistol,1,false)
       global.ShootShitAutoPistol = 0
       alarm[0] = 8 //time between shots     
 }
@@ -283,7 +283,7 @@ if (gamepad_button_check_released(0,gp_face3)or keyboard_check_released(ord("R")
     else
     
     {
-        audio_play_sound(Dry_Fire,1,false)
+        audio_play_sound(snd_DryFire,1,false)
     }
 }
 
@@ -344,7 +344,7 @@ if (gamepad_button_check_released(0,gp_face2) or keyboard_check_released(ord("F"
     
     if (global.C4InStock == 0 ) //so if you dont have points
     {
-        audio_play_sound(Dry_Fire,1,false) //dry fire if you don thave points
+        audio_play_sound(snd_DryFire,1,false) //dry fire if you don thave points
     } 
 }
 if (gamepad_button_check_released(0,gp_face1) or keyboard_check_released(ord("G"))) //this is for c4 detonation instance check
@@ -353,7 +353,7 @@ if (gamepad_button_check_released(0,gp_face1) or keyboard_check_released(ord("G"
     {
         if (instance_count == 0)
         {
-            audio_play_sound(Dry_Fire,1,false) //dry fire if you don thave points
+            audio_play_sound(snd_DryFire,1,false) //dry fire if you don thave points
         }
     }
 }
@@ -388,7 +388,7 @@ if (gamepad_button_check_released(0,gp_padu) or keyboard_check_released(ord("T")
     }
     else
     {
-        audio_play_sound(Dry_Fire,1,false)
+        audio_play_sound(snd_DryFire,1,false)
     }
 }
 </string>
@@ -674,7 +674,7 @@ case 2: {audio_play_sound(ALAM2,1,false)} break;
             <kind>1</kind>
             <string>if(global.PistolMag == 0)//if you try to shoot and mag equals zero
 {
-    audio_play_sound(Dry_Fire,1,false)
+    audio_play_sound(snd_DryFire,1,false)
 }
 
 </string>

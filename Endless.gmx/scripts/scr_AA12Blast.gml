@@ -79,7 +79,7 @@ if(global.ShootShitAA12 == 1)
         //etc
     }
     
-    audio_play_sound(AA12Blast,1,false)
+    audio_play_sound(snd_AA12,1,false)
     global.ShootShitAA12 = 0
     alarm[0] = 8 //time between shots  
 }

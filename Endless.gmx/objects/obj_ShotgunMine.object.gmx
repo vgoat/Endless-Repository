@@ -364,7 +364,7 @@ if en!=noone
         //etc
     }
     
-    audio_play_sound(ShotgunMineShotandLoad,1,false)
+    audio_play_sound(snd_ShotyFireandLoad,1,false)
     instance_destroy()
     }
     //Try this for through walls
