@@ -816,7 +816,6 @@
     <object>objects\obj_soldier_dna</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_test</room>
     <rooms name="Menus">
       <room>rooms\Start_Screen</room>
       <room>rooms\Play_Screen</room>
@@ -831,6 +830,7 @@
       <room>rooms\Zombie_1Dup</room>
       <room>rooms\Zombie_2</room>
     </rooms>
+    <room>rooms\rm_test</room>
     <room>rooms\rm_test_chamber</room>
   </rooms>
   <help>

@@ -731,7 +731,7 @@ if(global.ShootShitAutoPistol == 1)
             //etc
         }
         
-      audio_play_sound(Desert_Eagle_Firing,1,false)
+      audio_play_sound(snd_Pistol,1,false)
       global.ShootShitAutoPistol = 0
       alarm[0] = 8 //time between shots     
 }
