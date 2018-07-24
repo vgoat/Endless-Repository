@@ -987,7 +987,7 @@ obj_FollowCamera.sprite_index = spr_Uzi //so camera doesnt fuck up
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -1257,7 +1257,7 @@ case 5: {audio_play_sound(RQ5,1,false)} break;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -1339,7 +1339,7 @@ case 5: {audio_play_sound(RQ5,1,false)} break;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -1561,7 +1561,7 @@ obj_M4Bar.image_index += 1
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>M4_Shot</sound>
+            <sound>snd_M4</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -1770,7 +1770,7 @@ obj_M4Bar.image_index += 1
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -2040,7 +2040,7 @@ case 5: {audio_play_sound(RQ5,1,false)} break;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>
