@@ -1044,7 +1044,7 @@ else
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -1314,7 +1314,7 @@ case 5: {audio_play_sound(RQ5,1,false)} break;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -1396,7 +1396,7 @@ case 5: {audio_play_sound(RQ5,1,false)} break;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -1798,7 +1798,7 @@ else
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Pump_Shotgun</sound>
+            <sound>snd_PumpShotgun</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -2015,7 +2015,7 @@ else
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -2285,7 +2285,7 @@ case 5: {audio_play_sound(RQ5,1,false)} break;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>

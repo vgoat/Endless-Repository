@@ -1053,7 +1053,7 @@ instance_create(view_xview[0] + 640, view_yview[0] + 360, obj_MSDesertEagle) //d
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -1322,7 +1322,7 @@ case 5: {audio_play_sound(RQ5,1,false)} break;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -1404,7 +1404,7 @@ case 5: {audio_play_sound(RQ5,1,false)} break;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -1626,7 +1626,7 @@ obj_M60Bar.image_index += 1
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>M60_Shot</sound>
+            <sound>snd_M60</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -1871,7 +1871,7 @@ if (global.C4InStock == 0 &amp;&amp; global.Score &lt; 1500) //so if you dont ha
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -2140,7 +2140,7 @@ case 5: {audio_play_sound(RQ5,1,false)} break;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>

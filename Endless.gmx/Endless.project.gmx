@@ -36,29 +36,31 @@
         <sounds name="Guns_and_Reloading">
           <sound>sound\Bullet_Hitting_Wall</sound>
           <sounds name="Gun_Fire">
-            <sound>sound\Pump_Shotgun</sound>
-            <sound>sound\M4_Shot</sound>
-            <sound>sound\Dry_Fire</sound>
-            <sound>sound\Desert_Eagle_Firing</sound>
-            <sound>sound\MP9_Shot</sound>
-            <sound>sound\Sniper_Shot</sound>
-            <sound>sound\M60_Shot</sound>
-            <sound>sound\DesertEagleFire</sound>
-            <sound>sound\G11_Fire</sound>
-            <sound>sound\scr_FNFALFire</sound>
-            <sound>sound\AK12Fire</sound>
-            <sound>sound\ScorcherFire</sound>
-            <sound>sound\XL79Fire</sound>
-            <sound>sound\MG42Fire</sound>
-            <sound>sound\AT4Fire</sound>
-            <sound>sound\AT4Explosion</sound>
-            <sound>sound\ShotgunMineShotandLoad</sound>
-            <sound>sound\snd_50BMGFire</sound>
-            <sound>sound\MinigunFire</sound>
-            <sound>sound\HODFire</sound>
-            <sound>sound\DROPOGMFire</sound>
-            <sound>sound\DROPOGMExplosion</sound>
-            <sound>sound\AA12Blast</sound>
+
+            <sound>sound\snd_Pistol</sound>
+            <sound>sound\snd_PumpShotgun</sound>
+            <sound>sound\snd_M4</sound>
+            <sound>sound\snd_DryFire</sound>
+            <sound>sound\snd_MP9</sound>
+            <sound>sound\snd_Sniper</sound>
+            <sound>sound\snd_M60</sound>
+            <sound>sound\snd_DesertEagle</sound>
+            <sound>sound\snd_G11</sound>
+            <sound>sound\snd_FNFAL</sound>
+            <sound>sound\snd_AK12</sound>
+            <sound>sound\snd_Scorcher</sound>
+            <sound>sound\snd_XL79</sound>
+            <sound>sound\snd_MG42</sound>
+            <sound>sound\snd_AT4</sound>
+            <sound>sound\snd_AT4Explosion</sound>
+            <sound>sound\snd_ShotyFireandLoad</sound>
+            <sound>sound\snd_50BMGF</sound>
+            <sound>sound\snd_Minigun</sound>
+            <sound>sound\snd_HOD</sound>
+            <sound>sound\snd_DROPOGM</sound>
+            <sound>sound\snd_DROPOGMExplosion</sound>
+            <sound>sound\snd_AA12</sound>
+            
             <sound>sound\snd_SuperTurretFire</sound>
             <sound>sound\snd_Nitro</sound>
           </sounds>
@@ -427,6 +429,19 @@
       <sprite>sprites\spr_PauseBackDrop</sprite>
     </sprites>
     <sprite>sprites\spr_GoToUp</sprite>
+    <sprites name="DnaInc">
+      <sprite>sprites\spr_handgun_arming</sprite>
+      <sprite>sprites\spr_handgun_stand</sprite>
+      <sprite>sprites\spr_handgun_crouch</sprite>
+      <sprite>sprites\spr_handgun_recoil</sprite>
+      <sprite>sprites\spr_longgun_arming</sprite>
+      <sprite>sprites\spr_longgun_stand</sprite>
+      <sprite>sprites\spr_longgun_crouch</sprite>
+      <sprite>sprites\spr_longgun_recoil</sprite>
+      <sprite>sprites\spr_allammobar</sprite>
+      <sprite>sprites\spr_bullet</sprite>
+      <sprite>sprites\spr_m60_dna</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Pause_Menu">
@@ -476,6 +491,7 @@
         <script>scripts\scr_DeletePauseandUpgrades.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\array_org.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\WaveFont</font>
@@ -798,8 +814,11 @@
       <object>objects\obj_m60dup</object>
       <object>objects\obj_shotgundupturretstill</object>
     </objects>
+    <object>objects\obj_bullet_dna</object>
+    <object>objects\obj_soldier_dna</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_test</room>
     <rooms name="Menus">
       <room>rooms\Start_Screen</room>
       <room>rooms\Play_Screen</room>

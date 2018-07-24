@@ -1009,7 +1009,7 @@ case 5: {audio_play_sound(RQ5,1,false)} break;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -1091,7 +1091,7 @@ case 5: {audio_play_sound(RQ5,1,false)} break;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -1193,7 +1193,7 @@ case 5: {audio_play_sound(RQ5,1,false)} break;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Desert_Eagle_Firing</sound>
+            <sound>snd_Pistol</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -1534,7 +1534,7 @@ case 5: {audio_play_sound(RQ5,1,false)} break;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Dry_Fire</sound>
+            <sound>snd_DryFire</sound>
           </argument>
           <argument>
             <kind>3</kind>
