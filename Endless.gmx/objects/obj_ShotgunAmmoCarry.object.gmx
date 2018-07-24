@@ -44,8 +44,7 @@
     }
 }
 
-global.ShotgunMineCarry = 0;
-global.ShotgunMineDamage = 0;
+
 </string>
           </argument>
         </arguments>

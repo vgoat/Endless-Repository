@@ -27,11 +27,11 @@ else
 
 if(global.BulletDamageBought == 1) // if purchase of Movement Speed Upgrade Happened
 {
-    instance_create(view_xview[0] + 320,view_yview[0] + 608,obj_BulletDamageBought)
+    instance_create(view_xview[0] + 192,view_yview[0] + 608,obj_BulletDamageBought)
 }
 else
 {
-    instance_create(view_xview[0] + 320, view_yview[0] + 608,obj_BulletDamageBuy)
+    instance_create(view_xview[0] + 192, view_yview[0] + 608,obj_BulletDamageBuy)
 }
 
 if(global.C4CarryAmmountBought == 1) // if purchase of Movement Speed Upgrade Happened
@@ -63,11 +63,11 @@ else
 
 if(global.ExplosiveRadiusBought == 1) // if purchase of Movement Speed Upgrade Happened
 {
-    instance_create(view_xview[0] + 672,view_yview[0] + 608,obj_ExplosiveRadiusBought)
+    instance_create(view_xview[0] + 512,view_yview[0] + 608,obj_ExplosiveRadiusBought)
 }
 else
 {
-    instance_create(view_xview[0] + 672, view_yview[0] + 608,obj_ExplosiveRadiusBuy)
+    instance_create(view_xview[0] + 512, view_yview[0] + 608,obj_ExplosiveRadiusBuy)
 }
 
 
@@ -100,5 +100,14 @@ else
     instance_create(view_xview[0] + 768, view_yview[0] + 448,obj_AutoPistol)
 }
 
-global.ShotgunMineCarry = 0;
-global.ShotgunMineDamage = 0;
+if(global.MoneyAccumulator == 1) // if purchase of Movement Speed Upgrade Happened
+{
+    instance_create(view_xview[0] + 768,view_yview[0] + 608,obj_MoneyAccumulatorBought)
+}
+else
+{
+    instance_create(view_xview[0] + 768, view_yview[0] + 608,obj_MoneyAccumulator)
+}
+
+//global.ShotgunMineCarry = 0; why the fuck are thse here?
+//global.ShotgunMineDamage = 0;

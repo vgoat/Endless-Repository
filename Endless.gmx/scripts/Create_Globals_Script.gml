@@ -22,6 +22,8 @@ global.GameIsPaused = 0
 global.IAmPaused = false
 global.drawimage = 1
 global.drawturret = 1
+global.EnemiesActive = 0
+global.EnemiesActiveMax = 14
 
 
 ///this is for upgrades and stuff for gui
@@ -38,6 +40,12 @@ if (global.HardOrNah == 0)
     global.FatFuckSpawn = 750
     global.SlicerSpawn = 1700
     global.FastFuckSpawn = 950
+    
+    // Enemy Start healths
+    global.BaseZombieSHealth = 100
+    global.SlowFuckerSHealth = 300
+    global.FastFuckerSHealth = 175
+    global.SlicerSHealth = 600
 } //this is a base number for beginning of spawns
 
 if (global.HardOrNah == 1)
@@ -48,6 +56,11 @@ if (global.HardOrNah == 1)
     global.SlicerSpawn = 1000
     global.AmmoAmountPurchase = 500
     
+    // Enemy Start healths
+    global.BaseZombieSHealth = 150
+    global.SlowFuckerSHealth = 350
+    global.FastFuckerSHealth = 225
+    global.SlicerSHealth = 650
     
     //Makes It Cost More In Hard
     global.HPCost = 750
@@ -64,6 +77,11 @@ if (global.HardOrNah == 2)
     global.FastFuckSpawn = 550
     global.SlicerSpawn = 750
     
+    // Enemy Start healths
+    global.BaseZombieSHealth = 225
+    global.SlowFuckerSHealth = 400
+    global.FastFuckerSHealth = 275
+    global.SlicerSHealth = 700
     
     //Makes It Cost More In Hard
     global.HPCost = 1000
@@ -191,6 +209,7 @@ global.BulletDamageBought = 0;
 global.AutoPistolUpgrade = 0;
 global.ShotgunMineCarry = 0;
 global.ShotgunMineDamage = 0;
+global.MoneyAccumulator = 0;
 
 
 

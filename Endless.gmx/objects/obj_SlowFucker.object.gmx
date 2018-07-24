@@ -93,34 +93,10 @@ Hit = true
           <argument>
             <kind>1</kind>
             <string>///Wave Health and Health Stuff
-ZombiePoints = 300
 CantSeeYou = 1
 active = 1
-
-if(global.Wave &gt; 1 and global.Wave &lt;10)
-{
-    if (global.HardOrNah == 0){ZombiePoints = 300}; //health}
-    if (global.HardOrNah == 1){ZombiePoints = 350}; //health
-    if (global.HardOrNah == 2){ZombiePoints = 400}; //health}
-}
-
-if(global.Wave &gt; 11 and global.Wave &lt;20)
-{
-    if (global.HardOrNah == 0){ZombiePoints = 350}; //health}
-    if (global.HardOrNah == 1){ZombiePoints = 400}; //health
-    if (global.HardOrNah == 2){ZombiePoints = 450}; //health}
-}
-
-if(global.Wave &gt; 21 and global.Wave &lt;30)
-{
-    if (global.HardOrNah == 0){ZombiePoints = 425}; //health}
-    if (global.HardOrNah == 1){ZombiePoints = 475}; //health
-    if (global.HardOrNah == 2){ZombiePoints = 525}; //health}
-}
-
+ZombiePoints = global.SlowFuckerSHealth
 ZombieAttack = 1; //for delay of attacking
-
-
 
 image_angle = point_direction(x, y, global.WeaponArray[global.ArrayValue].x, global.WeaponArray[global.ArrayValue].y)
 
@@ -286,24 +262,34 @@ image_speed = .25
 
 image_angle = direction //current direction equals angle
 
-
 if ZombiePoints &lt;= 0
 {
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_create(x,y,obj_Cash100)//create splatter
-instance_destroy()
-global.Score += 100
-global.KillCount += 1
-
-
-var chance;
-chance = random(6); // out of 6...
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
 </string>
           </argument>
@@ -453,11 +439,11 @@ audio_play_sound(DROPOGMExplosion,1,false)
             <kind>1</kind>
             <string>if(global.BulletDamageBought == 0) //For Damage Uppy
 {
-    ZombiePoints = ZombiePoints - 300 //minus health
+    ZombiePoints = ZombiePoints - 250//minus health
 }
 else
 {
-    ZombiePoints = ZombiePoints - 375 //minus health
+    ZombiePoints = ZombiePoints - 325 //minus health
 }
 
 
@@ -465,25 +451,33 @@ instance_create(x,y, obj_BloodDroplets) //create droplets
 
 if ZombiePoints &lt;= 0
 {
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();//destroy instance
-global.Score += 100
-global.Money += 100 //points bitch !
-global.KillCount += 1
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
-
-var chance;
-chance = random(6); // out of ten...
-
-if(chance &lt;= 1) // one out of ten....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-
-
 </string>
           </argument>
         </arguments>
@@ -557,114 +551,33 @@ instance_create(x,y, obj_BloodDroplets) //create droplets
 
 if ZombiePoints &lt;= 0
 {
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();//destroy instance
-global.Score += 100
-global.Money += 100 //points bitch !
-global.KillCount += 1
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
-
-var chance;
-chance = random(6); // out of ten...
-
-if(chance &lt;= 1) // one out of ten....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>Zombie_Hit</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
-        <codestring></codestring>
-        <whoName>other</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_Shoty360Bullet">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(global.ShotgunMineDamage == 0) //For Damage Uppy
-{
-    ZombiePoints = ZombiePoints - 45 //minus health
-}
-else
-{
-    ZombiePoints = ZombiePoints - 80 //minus health
-}
-instance_create(x,y, obj_BloodDroplets) //create droplets
-
-if ZombiePoints &lt;= 0
-{
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();//destroy instance
-global.Score += 100
-global.Money += 100 //points bitch !
-global.KillCount += 1
-}
-
-var chance;
-chance = random(6); // out of ten...
-
-if(chance &lt;= 1) // one out of ten....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-
 </string>
           </argument>
         </arguments>
@@ -781,24 +694,33 @@ instance_create(x,y, obj_BloodDroplets)//create droplets
 
 if ZombiePoints &lt;= 0
 {
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();//destroy instance
-global.Score += 100
-global.Money += 100
-global.KillCount += 1
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
-
-var chance;
-chance = random(6); // out of ten...
-
-if(chance &lt;= 1) // one out of ten....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-
 </string>
           </argument>
         </arguments>
@@ -861,37 +783,49 @@ KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
             <kind>1</kind>
             <string>if(Hit = true)
 {
-if(global.BulletDamageBought == 0) //For Damage Uppy
-{
-    ZombiePoints = ZombiePoints - 12 //minus health
-}
-else
-{
-    ZombiePoints = ZombiePoints - 15.75 //minus health
-}
+    if(global.BulletDamageBought == 0) //For Damage Uppy
+    {
+        ZombiePoints = ZombiePoints - 12 //minus health
+    }
+    else
+    {
+        ZombiePoints = ZombiePoints - 15.75 //minus health
+    }
+    
+    instance_create(x,y, obj_BloodDroplets) //create droplets
 
-instance_create(x,y, obj_BloodDroplets) //create droplets
 
-if ZombiePoints &lt;= 0
-{
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();//destroy instance
-global.Score += 100 //points bitch !
-global.Money += 100
-global.KillCount += 1
-}
-
-var chance;
-chance = random(6); // out of ten...
-
-if(chance &lt;= 1) // one out of ten....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-Hit = false
-alarm[4] = 5
-
+    if ZombiePoints &lt;= 0
+    {
+        instance_create(x,y,obj_BloodSplatter)//create splatter
+        instance_destroy();//destroy instance
+        
+        if(global.MoneyAccumulator == 1)
+        {
+            global.Score += 50
+            global.Money += 50
+            global.KillCount += 1
+        }
+        else
+        {
+            global.Score += 50
+            instance_create(x,y,obj_Cash50)
+            global.KillCount += 1
+        }
+        
+        var chance;
+        chance = random(6); // out of 6
+        
+        if(chance &lt;= 1) // one out of 6....
+        {
+            audio_play_sound(Zombie_Death,1,false)
+           
+        }
+        
+        KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+    }
+    Hit = false
+    alarm[4] = 5
 }
 </string>
           </argument>
@@ -971,24 +905,33 @@ instance_create(x,y, obj_BloodDroplets) //create droplets
 
 if ZombiePoints &lt;= 0
 {
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();//destroy instance
-global.Score += 100
-global.Money += 100 //points bitch !
-global.KillCount += 1
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
-
-var chance;
-chance = random(6); // out of ten...
-
-if(chance &lt;= 1) // one out of ten....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-
 </string>
           </argument>
         </arguments>
@@ -1062,24 +1005,33 @@ instance_create(x,y, obj_BloodDroplets) //create droplets
 
 if ZombiePoints &lt;= 0
 {
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();//destroy instance
-global.Score += 100
-global.Money += 100 //points bitch !
-global.KillCount += 1
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
-
-var chance;
-chance = random(6); // out of ten...
-
-if(chance &lt;= 1) // one out of ten....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-
 </string>
           </argument>
         </arguments>
@@ -1153,24 +1105,33 @@ instance_create(x,y, obj_BloodDroplets)//create droplets
 
 if ZombiePoints &lt;= 0
 {
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();//destroy instance
-global.Score += 100
-global.Money += 100
-global.KillCount += 1
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
-
-var chance;
-chance = random(6); // out of ten...
-
-if(chance &lt;= 1) // one out of ten....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-
 </string>
           </argument>
         </arguments>
@@ -1244,24 +1205,33 @@ instance_create(x,y, obj_BloodDroplets)//create droplets
 
 if ZombiePoints &lt;= 0
 {
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();//destroy instance
-global.Score += 100
-global.Money += 100
-global.KillCount += 1
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
-
-var chance;
-chance = random(6); // out of ten...
-
-if(chance &lt;= 1) // one out of ten....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-
 </string>
           </argument>
         </arguments>
@@ -1335,24 +1305,33 @@ instance_create(x,y, obj_BloodDroplets)//create droplets
 
 if ZombiePoints &lt;= 0
 {
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();//destroy instance
-global.Score += 100
-global.Money += 100
-global.KillCount += 1
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
-
-var chance;
-chance = random(6); // out of ten...
-
-if(chance &lt;= 1) // one out of ten....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-
 </string>
           </argument>
         </arguments>
@@ -1425,24 +1404,133 @@ instance_create(x,y, obj_BloodDroplets)//create droplets
 
 if ZombiePoints &lt;= 0
 {
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();//destroy instance
-global.Score += 100
-global.Money += 100
-global.KillCount += 1
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
-
-var chance;
-chance = random(6); // out of ten...
-
-if(chance &lt;= 1) // one out of ten....
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>211</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>Zombie_Hit</sound>
+          </argument>
+          <argument>
+            <kind>3</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_ShotgunMineBullet">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.ShotgunMineDamage == 0) //For Damage Uppy
 {
-    audio_play_sound(Zombie_Death,1,false)
-   
+    ZombiePoints = ZombiePoints - 45 //minus health
+}
+else
+{
+    ZombiePoints = ZombiePoints - 65 //minus health
 }
 
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+instance_create(x,y, obj_BloodDroplets) //create droplets
 
+if ZombiePoints &lt;= 0
+{
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
+}
 </string>
           </argument>
         </arguments>
@@ -1516,24 +1604,33 @@ instance_create(x,y, obj_BloodDroplets)//create droplets
 
 if ZombiePoints &lt;= 0
 {
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();// destroy instance
-global.Score += 2000//score points for killing a fucker
-global.Money += 2000
-global.KillCount += 1
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
-
-var chance;
-chance = random(6); // out of ten...
-
-if(chance &lt;= 1) // one out of ten....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-
 </string>
           </argument>
         </arguments>
@@ -1607,24 +1704,33 @@ instance_create(x,y, obj_BloodDroplets)//create droplets
 
 if ZombiePoints &lt;= 0
 {
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();// destroy instance
-global.Score += 100 //score points for killing a fucker
-global.Money += 100
-global.KillCount += 1
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
-
-var chance;
-chance = random(6); // out of ten...
-
-if(chance &lt;= 1) // one out of ten....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-
 </string>
           </argument>
         </arguments>
@@ -1698,22 +1804,33 @@ instance_create(x,y, obj_BloodDroplets) //create droplets
 
 if ZombiePoints &lt;= 0
 {
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();//destroy instance
-global.Score += 100 //points bitch !
-global.Money += 100
-global.KillCount += 1
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
-
-var chance;
-chance = random(6); // out of ten...
-
-if(chance &lt;= 1) // one out of ten....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
 </string>
           </argument>
         </arguments>
@@ -1787,24 +1904,33 @@ instance_create(x,y, obj_BloodDroplets) //create droplets
 
 if ZombiePoints &lt;= 0
 {
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();//destroy instance
-global.Score += 100 //points bitch !
-global.Money += 100
-global.KillCount += 1
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
-
-var chance;
-chance = random(6); // out of ten...
-
-if(chance &lt;= 1) // one out of ten....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-
 </string>
           </argument>
         </arguments>
@@ -1878,25 +2004,33 @@ instance_create(x,y, obj_BloodDroplets) //create droplets
 
 if ZombiePoints &lt;= 0
 {
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();//destroy instance
-global.Score += 100 //points bitch !
-global.Money += 100
-global.KillCount += 1
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
-
-var chance;
-chance = random(6); // out of ten...
-
-if(chance &lt;= 1) // one out of ten....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-
-
 </string>
           </argument>
         </arguments>
@@ -1981,24 +2115,33 @@ instance_create(x,y, obj_BloodDroplets)//create droplets
 
 if ZombiePoints &lt;= 0
 {
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();//destroy instance
-global.Score += 100
-global.Money += 100
-global.KillCount += 1
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-
 </string>
           </argument>
         </arguments>
@@ -2045,24 +2188,33 @@ instance_create(x,y, obj_BloodDroplets)//create droplets
 
 if ZombiePoints &lt;= 0
 {
-instance_create(x,y,obj_BloodSplatter)//create splatter
-instance_destroy();//destroy instance
-global.Score += 100
-global.Money += 100
-global.KillCount += 1
+    instance_create(x,y,obj_BloodSplatter)//create splatter
+    instance_destroy();//destroy instance
+    
+    if(global.MoneyAccumulator == 1)
+    {
+        global.Score += 50
+        global.Money += 50
+        global.KillCount += 1
+    }
+    else
+    {
+        global.Score += 50
+        instance_create(x,y,obj_Cash50)
+        global.KillCount += 1
+    }
+    
+    var chance;
+    chance = random(6); // out of 6
+    
+    if(chance &lt;= 1) // one out of 6....
+    {
+        audio_play_sound(Zombie_Death,1,false)
+       
+    }
+    
+    KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
 }
-
-var chance;
-chance = random(6); // out of 6
-
-if(chance &lt;= 1) // one out of 6....
-{
-    audio_play_sound(Zombie_Death,1,false)
-   
-}
-
-KilledZombiesQuoteEnable() //For Killing Zombies and Dialouge...
-
 </string>
           </argument>
         </arguments>
@@ -2090,7 +2242,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2130,7 +2282,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2170,7 +2322,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2210,7 +2362,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2250,7 +2402,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2290,7 +2442,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2330,7 +2482,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2370,7 +2522,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2410,7 +2562,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2450,7 +2602,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2458,6 +2610,7 @@ global.HealthPoints -= 35; //take 5 health from charecter
     {
         obj_HealthBarUpgraded.image_index += 35;
     }
+
 ZombieAttack = 0 //make it so this is enabled in alarm
 alarm[0] = 45
 audio_play_sound(FatFuckerHitSnarler,1,false)
@@ -2489,7 +2642,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2529,7 +2682,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2569,7 +2722,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2609,7 +2762,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2649,7 +2802,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2689,7 +2842,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2697,8 +2850,6 @@ global.HealthPoints -= 35; //take 5 health from charecter
     {
         obj_HealthBarUpgraded.image_index += 35;
     }
-
-obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
 
 ZombieAttack = 0 //make it so this is enabled in alarm
 alarm[0] = 45
@@ -2731,7 +2882,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2771,7 +2922,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2811,7 +2962,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2819,6 +2970,7 @@ global.HealthPoints -= 35; //take 5 health from charecter
     {
         obj_HealthBarUpgraded.image_index += 35;
     }
+
 ZombieAttack = 0 //make it so this is enabled in alarm
 alarm[0] = 45
 audio_play_sound(FatFuckerHitSnarler,1,false)
@@ -2850,7 +3002,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2858,6 +3010,7 @@ global.HealthPoints -= 35; //take 5 health from charecter
     {
         obj_HealthBarUpgraded.image_index += 35;
     }
+
 ZombieAttack = 0 //make it so this is enabled in alarm
 alarm[0] = 45
 audio_play_sound(FatFuckerHitSnarler,1,false)
@@ -2889,7 +3042,7 @@ if(ZombieAttack == 1)
 {
 global.HealthPoints -= 35; //take 5 health from charecter
 
-    if(global.HealthUpgradeBought = 0) //for upgrade
+    if(global.HealthUpgradeBought == 0) //for upgrade
     {
         obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
     }
@@ -2897,8 +3050,6 @@ global.HealthPoints -= 35; //take 5 health from charecter
     {
         obj_HealthBarUpgraded.image_index += 35;
     }
-
-obj_SoldierClassHealthBar.image_index +=35 // make correct bar index
 
 ZombieAttack = 0 //make it so this is enabled in alarm
 alarm[0] = 45

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 300 //set alarm for when blood splatter will fade
+            <string>alarm[0] = 1//set alarm for when blood splatter will fade
 </string>
           </argument>
         </arguments>

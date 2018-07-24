@@ -36,6 +36,7 @@
         <sounds name="Guns_and_Reloading">
           <sound>sound\Bullet_Hitting_Wall</sound>
           <sounds name="Gun_Fire">
+
             <sound>sound\snd_Pistol</sound>
             <sound>sound\snd_PumpShotgun</sound>
             <sound>sound\snd_M4</sound>
@@ -59,6 +60,7 @@
             <sound>sound\snd_DROPOGM</sound>
             <sound>sound\snd_DROPOGMExplosion</sound>
             <sound>sound\snd_AA12</sound>
+            
             <sound>sound\snd_SuperTurretFire</sound>
             <sound>sound\snd_Nitro</sound>
           </sounds>
@@ -237,6 +239,7 @@
           <sprites name="Bullets">
             <sprite>sprites\spr_PistolBullet</sprite>
             <sprite>sprites\spr_BulletTrace</sprite>
+            <sprite>sprites\spr_TurretBulletTrace</sprite>
             <sprite>sprites\spr_MinigunBullet</sprite>
             <sprite>sprites\spr_ShotGunPellet</sprite>
             <sprite>sprites\spr_Sniper3</sprite>
@@ -299,8 +302,8 @@
             <sprite>sprites\spr_ShotgunAmmoTin</sprite>
           </sprites>
           <sprites name="Pick Ups">
-            <sprite>sprites\spr_Cash50</sprite>
-            <sprite>sprites\spr_Cash225</sprite>
+            <sprite>sprites\spr_Cash25</sprite>
+            <sprite>sprites\spr_CashNot25</sprite>
           </sprites>
           <sprites name="Super Turret">
             <sprite>sprites\spr_SuperTurretFlashFull</sprite>
@@ -406,6 +409,7 @@
           <sprite>sprites\spr_BuyAutoPistol</sprite>
           <sprite>sprites\spr_ShotgunAmmoCarryUpgrade</sprite>
           <sprite>sprites\spr_ShotgunDamageUpgrade</sprite>
+          <sprite>sprites\spr_MoneyAccumulator</sprite>
         </sprites>
         <sprites name="Bought">
           <sprite>sprites\spr_MovementSpeedBought</sprite>
@@ -419,6 +423,7 @@
           <sprite>sprites\spr_TurretDamageBought</sprite>
           <sprite>sprites\spr_ShotgunAmmoCarryUpgradeBought</sprite>
           <sprite>sprites\spr_ShotgunDamageUpgradeBought</sprite>
+          <sprite>sprites\spr_MoneyAccumulatorBought</sprite>
         </sprites>
       </sprites>
       <sprite>sprites\spr_PauseBackDrop</sprite>
@@ -490,6 +495,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\WaveFont</font>
+    <font>fonts\EnemyCount</font>
     <font>fonts\ScoreandWaveFont</font>
     <font>fonts\GunBuy</font>
     <font>fonts\DeathFont</font>
@@ -594,6 +600,7 @@
             <object>objects\obj_TurretBullet</object>
             <object>objects\obj_ShotGunPellet</object>
             <object>objects\obj_AA12Bullet</object>
+            <object>objects\obj_ShotgunMineBullet</object>
             <object>objects\obj_PistolBullet</object>
             <object>objects\obj_MP9Bullet</object>
             <object>objects\obj_M60Bullet</object>
@@ -662,6 +669,7 @@
             <object>objects\obj_ControllerReticle</object>
             <object>objects\obj_WaveBox</object>
             <object>objects\obj_DrawWave</object>
+            <object>objects\obj_DrawEnemiesAmmount</object>
             <object>objects\obj_DrawMoney</object>
             <object>objects\obj_DrawScore</object>
             <object>objects\obj_DrawMedpacks</object>
@@ -678,10 +686,10 @@
           <object>objects\obj_WallParent</object>
         </objects>
         <objects name="Pick Ups">
+          <object>objects\obj_Cash25</object>
           <object>objects\obj_Cash50</object>
+          <object>objects\obj_Cash75</object>
           <object>objects\obj_Cash100</object>
-          <object>objects\obj_Cash150</object>
-          <object>objects\obj_Cash225</object>
         </objects>
         <objects name="Super Turret">
           <object>objects\obj_SuperTurretBase</object>
@@ -719,12 +727,12 @@
         <object>objects\obj_EnemySpawn1</object>
       </objects>
       <objects name="Pause_Screen / Gun  Buys">
-        <object>objects\obj_AmmoPurchasePrice</object>
+        <object>objects\obj_AmmoPurchasePrice_Money</object>
         <object>objects\obj_GoToUpgrade</object>
         <object>objects\obj_GoToPause</object>
         <object>objects\obj_DrawBackground</object>
         <objects name="Upgrades Menu">
-          <object>objects\obj_C4Cost</object>
+          <object>objects\obj_C4Cost_Money</object>
           <object>objects\obj_HPCost</object>
           <object>objects\obj_TurretCost</object>
           <object>objects\obj_ShotgunMineCost</object>
@@ -740,6 +748,7 @@
             <object>objects\obj_AutoPistol</object>
             <object>objects\obj_ShotgunAmmoCarry</object>
             <object>objects\obj_ShotgunDamage</object>
+            <object>objects\obj_MoneyAccumulator</object>
           </objects>
           <objects name="Bought">
             <object>objects\obj_MovementSpeedBought</object>
@@ -753,6 +762,7 @@
             <object>objects\obj_AutoPistolBought</object>
             <object>objects\obj_ShotgunAmmoCarryBought</object>
             <object>objects\obj_ShotgunDamageBought</object>
+            <object>objects\obj_MoneyAccumulatorBought</object>
           </objects>
         </objects>
         <objects name="Buttons">

@@ -26,9 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>draw_set_font(GunBuy);
-draw_set_color(c_white);
+draw_set_color(c_red);
 draw_set_halign(fa_center)//center text
-draw_text(view_xview[0] + 640, view_yview[0] + 665,"Ammo Cost - " + string(global.AmmoAmountPurchase)) //draw Shotgun Ammo at position
+draw_text(view_xview[0] + 1228, view_yview[0] + 288,"C4 Cost - " + string(global.C4Cost)) //draw Shotgun Ammo at position
+draw_text(view_xview[0] + 1228, view_yview[0] + 328,"Money - " + string(global.Money)) 
 draw_set_halign(-1);
 draw_set_color(c_black);
 draw_set_font(-1);

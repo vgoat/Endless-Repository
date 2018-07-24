@@ -3,7 +3,7 @@ with(obj_QuitPS){instance_destroy()}
 
 with(obj_MainMenuPM) {instance_destroy()} 
 //for showys
-with(obj_C4Cost) {instance_destroy()} 
+with(obj_C4Cost_Money) {instance_destroy()} 
 
 with(obj_HPCost) {instance_destroy()} 
 
@@ -45,3 +45,6 @@ with(obj_ShotgunDamageBought) {instance_destroy()}
 
 with(obj_ShotgunAmmoCarry) {instance_destroy()} // Turret Damage Upgrade
 with(obj_ShotgunAmmoCarryBought) {instance_destroy()}
+
+with(obj_MoneyAccumulator) {instance_destroy()} // Turret Damage Upgrade
+with(obj_MoneyAccumulatorBought) {instance_destroy()}
